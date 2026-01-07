@@ -36,7 +36,7 @@ import Awards from "./pages/awards";
 function App() {
   return (
     <Router>
-      <div className="min-h-screen flex flex-col">
+      <div className="bg-gray-300 min-h-screen flex flex-col">
 
         {/* HEADER */}
         <Header />

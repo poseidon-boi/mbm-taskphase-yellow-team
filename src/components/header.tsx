@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 
 function Header() {
   return (
-    <div className="bg-gray-500 text-white p-2">
+    <div className="bg-gray-500 text-white">
       <div className="flex justify-between p-5">
         <Link to='/home' className="text-xl">Yellow Team</Link>
 
