@@ -1,17 +1,38 @@
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 
 function Header() {
-  return (
-    <div className="bg-gray-500 text-white">
-      <div className="flex justify-between p-5">
-        <Link to='/home' className="text-xl">Yellow Team</Link>
+  const location = useLocation();
 
-        <div className="flex gap-5">
+  const isHome =
+    location.pathname === "/" || location.pathname === "/home";
+
+  return (
+    <header
+      className={`fixed top-0 left-0 w-full z-50 transition-colors duration-300
+        ${isHome ? "bg-transparent" : "bg-[#1F3D2B]"}
+      `}
+    >
+      <div className="flex justify-between items-center px-8 py-5 text-[#F4F6F3]">
+
+        {/* LOGO */}
+        <Link to="/home" className="text-3xl font-medium tracking-wide">
+          Yellow Team
+        </Link>
+
+        {/* NAV */}
+        <nav className="flex gap-6 text-lg">
 
           {/* PROJECT */}
           <div className="relative group">
-            <p className="cursor-pointer">Project ▾</p>
-            <div className="absolute hidden group-hover:flex flex-col bg-gray-400 border p-3 items-center w-40 rounded-lg gap-2">
+            <span className="cursor-pointer">Project ▾</span>
+            <div
+              className="absolute top-full left-1/2 -translate-x-1/2
+              hidden group-hover:flex flex-col
+              bg-[#101317]
+              p-3
+              items-center w-44 rounded-lg gap-2
+              text-sm"
+            >
               <Link to="/project/description">Description</Link>
               <Link to="/project/design">Design</Link>
               <Link to="/project/poc">Proof of Concept</Link>
@@ -25,8 +46,14 @@ function Header() {
 
           {/* WET LAB */}
           <div className="relative group">
-            <p className="cursor-pointer">Wet Lab ▾</p>
-            <div className="absolute hidden group-hover:flex flex-col bg-gray-400 border p-3 items-center w-37 rounded-lg gap-2">
+            <span className="cursor-pointer">Wet Lab ▾</span>
+            <div className="absolute top-full left-1/2 -translate-x-1/2
+              hidden group-hover:flex flex-col
+              bg-[#101317]
+              p-3
+              items-center w-44 rounded-lg gap-2
+              text-sm"
+            >
               <Link to="/wetlab/experiments">Experiments</Link>
               <Link to="/wetlab/notebook">Notebook</Link>
               <Link to="/wetlab/measurement">Measurement</Link>
@@ -36,8 +63,14 @@ function Header() {
 
           {/* DRY LAB */}
           <div className="relative group">
-            <p className="cursor-pointer">Dry Lab ▾</p>
-            <div className="absolute hidden group-hover:flex flex-col bg-gray-400 border p-3 items-center w-25 rounded-lg gap-2">
+            <span className="cursor-pointer">Dry Lab ▾</span>
+            <div className="absolute top-full left-1/2 -translate-x-1/2
+              hidden group-hover:flex flex-col
+              bg-[#101317]
+              p-3
+              items-center w-44 rounded-lg gap-2
+              text-sm"
+            >
               <Link to="/drylab/model">Model</Link>
               <Link to="/drylab/software">Software</Link>
             </div>
@@ -45,8 +78,14 @@ function Header() {
 
           {/* ENGAGEMENT */}
           <div className="relative group">
-            <p className="cursor-pointer">Engagement ▾</p>
-            <div className="absolute hidden group-hover:flex flex-col bg-gray-400 border p-3 items-center w-39 rounded-lg gap-2">
+            <span className="cursor-pointer">Engagement ▾</span>
+            <div className="absolute top-full left-1/2 -translate-x-1/2
+              hidden group-hover:flex flex-col
+              bg-[#101317]
+              p-3
+              items-center w-44 rounded-lg gap-2
+              text-sm"
+            >
               <Link to="/engagement/hp">Human Practices</Link>
               <Link to="/engagement/collab">Collaboration</Link>
               <Link to="/engagement/sustainability">Sustainability</Link>
@@ -56,20 +95,27 @@ function Header() {
 
           {/* TEAM */}
           <div className="relative group">
-            <p className="cursor-pointer">Team ▾</p>
-            <div className="absolute hidden group-hover:flex flex-col bg-gray-400 border p-3 items-center w-35 rounded-lg gap-2">
+            <span className="cursor-pointer">Team ▾</span>
+            <div className="absolute top-full left-1/2 -translate-x-1/2
+              hidden group-hover:flex flex-col
+              bg-[#101317]
+              p-3
+              items-center w-44 rounded-lg gap-2
+              text-sm"
+            >
               <Link to="/team/members">Members</Link>
               <Link to="/team/attributions">Attributions</Link>
               <Link to="/team/medals">Medals</Link>
-              <Link to="/team/sponsers">Sponsers</Link>
+              <Link to="/team/sponsers">Sponsors</Link>
             </div>
           </div>
 
+          {/* AWARDS */}
           <Link to="/awards">Awards</Link>
 
-        </div>
+        </nav>
       </div>
-    </div>
+    </header>
   );
 }
 

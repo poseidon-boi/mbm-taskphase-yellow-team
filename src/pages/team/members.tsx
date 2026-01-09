@@ -1,20 +1,20 @@
-import { useState } from "react"
-import Card from "../../components/card"
+import { useState } from "react";
+import Card from "../../components/card";
 
-import aaryan from "../../assets/aaryan.png"
-import aniket from "../../assets/aniket.png"
-import dheekshidhaa from "../../assets/dheekshidhaa.png"
-import fiona from "../../assets/fiona.png"
-import jatin from "../../assets/jatin.png"
-import johanna from "../../assets/johanna.png"
-import joshua from "../../assets/joshua.png"
-import nandan from "../../assets/nandan.png"
-import nivedita from "../../assets/nivedita.png"
-import reeya from "../../assets/reeya.png"
-import ruchi from "../../assets/ruchi.jpeg"
-import sharon from "../../assets/sharon.png"
-import shreyas from "../../assets/shreyas.png"
-import tanushree from "../../assets/tanushree.png"
+import aaryan from "../../assets/aaryan.png";
+import aniket from "../../assets/aniket.png";
+import dheekshidhaa from "../../assets/dheekshidhaa.png";
+import fiona from "../../assets/fiona.png";
+import jatin from "../../assets/jatin.png";
+import johanna from "../../assets/johanna.png";
+import joshua from "../../assets/joshua.png";
+import nandan from "../../assets/nandan.png";
+import nivedita from "../../assets/nivedita.png";
+import reeya from "../../assets/reeya.png";
+import ruchi from "../../assets/ruchi.jpeg";
+import sharon from "../../assets/sharon.png";
+import shreyas from "../../assets/shreyas.png";
+import tanushree from "../../assets/tanushree.png";
 
 const membersData = [
   { image: aaryan, name: "Aaryan Joshi", subsystem: "Dry Lab", fuel: "Copious amounts of food" },
@@ -31,88 +31,102 @@ const membersData = [
   { image: sharon, name: "Sharon Liz Thomas", subsystem: "Research", fuel: "The belief that science suffering builds character" },
   { image: shreyas, name: "Shreyas Seshadri", subsystem: "Dry Lab", fuel: "Om Xerox chai" },
   { image: tanushree, name: "Tanushree Dhirendra Trivedi", subsystem: "HP, HnS", fuel: "Caffine, repeated attempts and questionable optimism" },
-]
+];
 
 function Members() {
-  const [index, setIndex] = useState(1)
-  const [transition, setTransition] = useState(true)
+  const [index, setIndex] = useState(1);
+  const [transition, setTransition] = useState(true);
 
-  const total = membersData.length
+  const total = membersData.length;
 
   const prev = () => {
-    setTransition(true)
-    setIndex((i) => i - 1)
-  }
+    setTransition(true);
+    setIndex((i) => i - 1);
+  };
 
   const next = () => {
-    setTransition(true)
-    setIndex((i) => i + 1)
-  }
+    setTransition(true);
+    setIndex((i) => i + 1);
+  };
 
   return (
-  <div className="bg-gray-300 min-h-screen">
-    <div className="flex justify-center font-bold text-4xl py-4 my-10">
-      Meet the team!
-    </div>
+    <section className="bg-[#1F3D2B] min-h-screen pt-32 pb-32 px-16 relative">
 
-    <div className="w-screen flex items-center justify-center relative overflow-hidden bg-gray-300">
+      {/* Header fade buffer */}
+      <div className="absolute top-0 left-0 w-full h-32 bg-gradient-to-b from-[#1F3D2B] to-transparent pointer-events-none z-40" />
 
-      {/* LEFT ARROW */}
-      <button
-        onClick={prev}
-        className="absolute left-12 text-6xl font-bold z-50"
-      >
-        ‹
-      </button>
+      {/* Title */}
+      <h1 className="text-[#F4F6F3] text-4xl font-bold text-center mb-16">
+        Meet the team!
+      </h1>
 
-      {/* VIEWPORT */}
-      <div className="w-[60vw] h-[70vh] overflow-hidden">
-        <div
-          className={`flex h-full ${
-            transition ? "transition-transform duration-500 ease-linear" : ""
-          }`}
-          style={{ transform: `translateX(-${index * 100}%)` }}
-          onTransitionEnd={() => {
-            if (index === 0) {
-              setTransition(false)
-              setIndex(total)
-            }
-            if (index === total + 1) {
-              setTransition(false)
-              setIndex(1)
-            }
-          }}
+      {/* Carousel */}
+      <div className="w-full flex items-center justify-center relative overflow-hidden">
+
+        {/* LEFT ARROW */}
+        <button
+          onClick={prev}
+          className="absolute left-0 text-6xl font-bold z-50 text-[#F4F6F3] hover:opacity-80 transition"
         >
-          {/* CLONE: LAST */}
-          <div className="w-[60vw] h-full flex-shrink-0">
-            <Card {...membersData[total - 1]} />
-          </div>
+          ‹
+        </button>
 
-          {/* REAL SLIDES */}
-          {membersData.map((member, i) => (
-            <div key={i} className="w-[60vw] h-full flex-shrink-0">
-              <Card {...member} />
+        {/* VIEWPORT */}
+        <div className="w-[65vw] h-[70vh] overflow-hidden">
+          <div
+            className={`flex h-full ${
+              transition ? "transition-transform duration-500 ease-linear" : ""
+            }`}
+            style={{ transform: `translateX(-${index * 100}%)` }}
+            onTransitionEnd={() => {
+              if (index === 0) {
+                setTransition(false);
+                setIndex(total);
+              }
+              if (index === total + 1) {
+                setTransition(false);
+                setIndex(1);
+              }
+            }}
+          >
+            {/* CLONE: LAST */}
+            <div className="w-[65vw] h-full flex-shrink-0 flex items-center justify-center">
+              <div className="bg-[#668F75] border-2 border-[#1F3D2B] rounded-2xl w-full h-full overflow-hidden text-black">
+                <Card {...membersData[total - 1]} />
+              </div>
             </div>
-          ))}
 
-          {/* CLONE: FIRST */}
-          <div className="w-[60vw] h-full flex-shrink-0">
-            <Card {...membersData[0]} />
+            {/* REAL SLIDES */}
+            {membersData.map((member, i) => (
+              <div
+                key={i}
+                className="w-[65vw] h-full flex-shrink-0 flex items-center justify-center"
+              >
+                <div className="bg-[#668F75] border-2 border-[#1F3D2B] rounded-2xl w-full h-full overflow-hidden text-black">
+                  <Card {...member} />
+                </div>
+              </div>
+            ))}
+
+            {/* CLONE: FIRST */}
+            <div className="w-[65vw] h-full flex-shrink-0 flex items-center justify-center">
+              <div className="bg-[#668F75] border-2 border-[#1F3D2B] rounded-2xl w-full h-full overflow-hidden text-black">
+                <Card {...membersData[0]} />
+              </div>
+            </div>
           </div>
         </div>
-      </div>
 
-      {/* RIGHT ARROW */}
-      <button
-        onClick={next}
-        className="absolute right-12 text-6xl font-bold z-50"
-      >
-        ›
-      </button>
-    </div>
-    </div>
-  )
+        {/* RIGHT ARROW */}
+        <button
+          onClick={next}
+          className="absolute right-0 text-6xl font-bold z-50 text-[#F4F6F3] hover:opacity-80 transition"
+        >
+          ›
+        </button>
+      </div>
+    </section>
+  );
 }
 
-
-export default Members
+export default Members;
