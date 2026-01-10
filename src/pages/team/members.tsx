@@ -50,13 +50,13 @@ function Members() {
   };
 
   return (
-    <section className="bg-[#1F3D2B] min-h-screen pt-32 pb-32 px-16 relative">
+    <section className="bg-[#1F2A13] min-h-screen pt-32 pb-32 px-16 relative">
 
       {/* Header fade buffer */}
-      <div className="absolute top-0 left-0 w-full h-32 bg-gradient-to-b from-[#1F3D2B] to-transparent pointer-events-none z-40" />
+      <div className="absolute top-0 left-0 w-full h-32 bg-gradient-to-b from-[#1F2A13] to-transparent pointer-events-none z-40" />
 
       {/* Title */}
-      <h1 className="text-[#F4F6F3] text-4xl font-bold text-center mb-16">
+      <h1 className="text-[#FEFAE0] text-4xl font-bold text-center mb-16">
         Meet the team!
       </h1>
 
@@ -91,7 +91,7 @@ function Members() {
           >
             {/* CLONE: LAST */}
             <div className="w-[65vw] h-full flex-shrink-0 flex items-center justify-center">
-              <div className="bg-[#668F75] border-2 border-[#1F3D2B] rounded-2xl w-full h-full overflow-hidden text-black">
+              <div className="bg-[#FEFAE0] border-2 border-[#1F3D2B] rounded-2xl w-full h-full overflow-hidden text-black">
                 <Card {...membersData[total - 1]} />
               </div>
             </div>
@@ -102,7 +102,7 @@ function Members() {
                 key={i}
                 className="w-[65vw] h-full flex-shrink-0 flex items-center justify-center"
               >
-                <div className="bg-[#668F75] border-2 border-[#1F3D2B] rounded-2xl w-full h-full overflow-hidden text-black">
+                <div className="bg-[#FEFAE0] border-2 border-[#1F3D2B] rounded-2xl w-full h-full overflow-hidden text-black">
                   <Card {...member} />
                 </div>
               </div>
@@ -110,7 +110,7 @@ function Members() {
 
             {/* CLONE: FIRST */}
             <div className="w-[65vw] h-full flex-shrink-0 flex items-center justify-center">
-              <div className="bg-[#668F75] border-2 border-[#1F3D2B] rounded-2xl w-full h-full overflow-hidden text-black">
+              <div className="bg-[#FEFAE0] border-2 border-[#1F3D2B] rounded-2xl w-full h-full overflow-hidden text-black">
                 <Card {...membersData[0]} />
               </div>
             </div>

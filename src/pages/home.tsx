@@ -2,6 +2,7 @@ import bgvid from "../assets/bg-vid.mp4";
 
 function Home() {
   return (
+    <>
     <section className="relative w-full min-h-screen bg-[#101317] overflow-hidden">
       
       {/* Background video */}
@@ -11,7 +12,7 @@ function Home() {
         muted
         loop
         playsInline
-        className="absolute inset-0 w-full h-full object-cover opacity-70"
+        className="absolute inset-0 w-full h-full object-cover opacity-80"
       />
 
       {/* Dark overlay */}
@@ -28,11 +29,19 @@ function Home() {
           </p>
         </div>
       </div>
-
-      <div>
-        
-      </div>
     </section>
+    <section>
+          <p className="text-5xl text-[#EAC49A] p-4">Lorem ipsum dolor sit amet, </p>
+          <p className="text-5xl text-[#EAC49A] p-4"> consectetur adipisicing elit. Officia quaerat vitae</p>
+          <div className="p-10">
+            <div className="bg-white p-5 rounded-lg"> 
+            <div className="text-lg">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dignissimos, at magnam. Non aspernatur nisi molestiae maxime doloremque, distinctio nihil, ullam soluta fugit hic fugiat! Perspiciatis aut dicta maiores neque asperiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim, delectus aspernatur ducimus aliquid minus blanditiis, minima harum quaerat ad nostrum, odit quidem perferendis. Corrupti dolor recusandae et? Porro, quam dolorum. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Architecto est, minima odit corporis quis possimus illo dolorem accusantium earum doloremque dicta numquam eligendi optio? Possimus corporis itaque eius quaerat harum!
+            </div>
+          </div>
+          </div>
+        </section>
+    </>
   );
 }
 

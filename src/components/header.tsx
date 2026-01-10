@@ -9,7 +9,7 @@ function Header() {
   return (
     <header
       className={`fixed top-0 left-0 w-full z-50 transition-colors duration-300
-        ${isHome ? "bg-transparent" : "bg-[#1F3D2B]"}
+        ${isHome ? "bg-transparent" : "bg-[#1F2A13]"}
       `}
     >
       <div className="flex justify-between items-center px-8 py-5 text-[#F4F6F3]">

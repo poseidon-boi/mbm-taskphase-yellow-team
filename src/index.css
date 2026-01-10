@@ -37,3 +37,7 @@ html, body, #root {
   width: 100%;
   overflow-x: hidden;
 }
+
+body {
+  background-color: #283618;
+}
