@@ -1,47 +1,109 @@
+import { useEffect, useRef } from "react";
+import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
 import bgvid from "../assets/bg-vid.mp4";
 
+gsap.registerPlugin(ScrollTrigger);
+
 function Home() {
-  return (
-    <>
-    <section className="relative w-full min-h-screen bg-[#101317] overflow-hidden">
+  const mainRef = useRef<HTMLDivElement>(null);
+  const videoSectionRef = useRef<HTMLDivElement>(null);
+  const textSectionRef = useRef<HTMLDivElement>(null);
+  const highlightRef = useRef<HTMLHeadingElement>(null);
+
+  useEffect(() => {
+    const ctx = gsap.context(() => {
       
-      {/* Background video */}
-      <video
-        src={bgvid}
-        autoPlay
-        muted
-        loop
-        playsInline
-        className="absolute inset-0 w-full h-full object-cover opacity-80"
-      />
+      // 1. CREATE A MAIN TIMELINE
+      // This allows us to sequence the word reveal AND the color change perfectly
+      const tl = gsap.timeline({
+        scrollTrigger: {
+          trigger: textSectionRef.current,
+          start: "top top",      // Pin starts when text section hits the top
+          end: "+=300%",         // How long the user stays "locked" on this screen
+          pin: true,             // LOCK the grey background
+          scrub: 1.5,            // Smoothly links animation to scroll
+          anticipatePin: 1,
+        }
+      });
 
-      {/* Dark overlay */}
-      <div className="absolute inset-0 bg-[#101317]/80" />
+      // 2. ADD WORD REVEAL TO TIMELINE
+      const words = gsap.utils.toArray(".word");
+      tl.from(words, {
+        x: 100,
+        opacity: 0,
+        stagger: 0.5,           // Large stagger for slow, individual rendering
+        duration: 2,
+        ease: "power2.out",
+      });
 
-      {/* Content */}
-      <div className="relative z-10 min-h-screen flex items-center justify-center pt-32">
-        <div className="max-w-4xl px-6 text-center text-[#C2C7CE]">
-          <h1 className="text-4xl md:text-5xl font-semibold mb-4">
-            Yellow Team
-          </h1>
-          <p className="text-lg md:text-xl text-[#9AA0A6]">
-            This is the first home page of Yellow Team
-          </p>
+      // 3. ADD COLOR CHANGE TO TIMELINE
+      // This happens AFTER all words have rendered because it's next in the timeline
+      const highlightWords = highlightRef.current?.querySelectorAll(".word");
+      if (highlightWords && highlightWords.length >= 2) {
+        const lastTwo = Array.from(highlightWords).slice(-2);
+        
+        tl.to(lastTwo, {
+          color: "#ffc300",
+          duration: 1,
+          ease: "none"
+        }, "+=0.2"); // Slight delay after last word appears before turning gold
+      }
+
+    }, mainRef);
+
+    return () => ctx.revert(); 
+  }, []);
+
+  const line1 = "Lorem ipsum dolor sit amet,";
+  const line2 = "consectetur adipisicing elit.";
+  const highlight = "Officia quaerat vitae";
+
+  return (
+    <div ref={mainRef} className="bg-[#101317] w-full">
+      {/* 1. VIDEO PART: This scrolls away normally */}
+      <section ref={videoSectionRef} className="h-screen w-full overflow-hidden">
+        <video
+          src={bgvid}
+          autoPlay muted loop playsInline
+          className="h-full w-full object-cover"
+        />
+        <div className="absolute inset-0 bg-black/60" />
+        <div className="absolute inset-0 flex flex-col items-center justify-center text-center">
+          <h1 className="text-6xl font-bold text-white mb-4">Yellow Team</h1>
+          <p className="text-sm tracking-[0.4em] text-white/40 uppercase font-medium">Scroll to Begin</p>
         </div>
-      </div>
-    </section>
-    <section>
-          <p className="text-5xl text-[#EAC49A] p-4">Lorem ipsum dolor sit amet, </p>
-          <p className="text-5xl text-[#EAC49A] p-4"> consectetur adipisicing elit. Officia quaerat vitae</p>
-          <div className="p-10">
-            <div className="bg-white p-5 rounded-lg"> 
-            <div className="text-lg">
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dignissimos, at magnam. Non aspernatur nisi molestiae maxime doloremque, distinctio nihil, ullam soluta fugit hic fugiat! Perspiciatis aut dicta maiores neque asperiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim, delectus aspernatur ducimus aliquid minus blanditiis, minima harum quaerat ad nostrum, odit quidem perferendis. Corrupti dolor recusandae et? Porro, quam dolorum. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Architecto est, minima odit corporis quis possimus illo dolorem accusantium earum doloremque dicta numquam eligendi optio? Possimus corporis itaque eius quaerat harum!
-            </div>
-          </div>
-          </div>
-        </section>
-    </>
+      </section>
+
+      {/* 2. PINNED GRAY SECTION: The "Stage" */}
+      <section 
+        ref={textSectionRef} 
+        className="h-screen bg-[#101317] flex flex-col justify-center items-center relative z-10"
+      >
+        <div className="max-w-5xl w-full px-10">
+          {[line1, line2].map((line, index) => (
+            <h2 key={index} className="text-6xl text-[#FEFAE0] mb-10 leading-snug font-light">
+              {line.split(" ").map((word, i) => (
+                <span key={i} className="word inline-block mr-5">{word}</span>
+              ))}
+            </h2>
+          ))}
+
+          <h2 ref={highlightRef} className="text-6xl text-[#FEFAE0] leading-snug font-light">
+            {highlight.split(" ").map((word, i) => (
+              <span key={i} className="word inline-block mr-5">
+                {word}
+              </span>
+            ))}
+          </h2>
+        </div>
+      </section>
+
+      {/* 3. NEXT CONTENT: Only reachable after the animation is done */}
+      <section className="h-screen bg-[#1a1d21] flex items-center justify-center">
+        <h2 className="text-4xl text-white/20 uppercase tracking-[1em]">Next Chapter</h2>
+      </section>
+    </div>
   );
 }
 

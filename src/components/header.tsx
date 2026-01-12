@@ -15,16 +15,16 @@ function Header() {
       <div className="flex justify-between items-center px-8 py-5 text-[#F4F6F3]">
 
         {/* LOGO */}
-        <Link to="/home" className="text-3xl font-medium tracking-wide">
-          Yellow Team
+        <Link to="/home" className="text-4xl font-medium tracking-wide">
+          <h1>Yellow Team</h1>
         </Link>
 
         {/* NAV */}
-        <nav className="flex gap-6 text-lg">
+        <nav className="flex gap-6 text-2xl">
 
           {/* PROJECT */}
           <div className="relative group">
-            <span className="cursor-pointer">Project ▾</span>
+            <h1 className="cursor-pointer">Project ▾</h1>
             <div
               className="absolute top-full left-1/2 -translate-x-1/2
               hidden group-hover:flex flex-col
@@ -46,7 +46,7 @@ function Header() {
 
           {/* WET LAB */}
           <div className="relative group">
-            <span className="cursor-pointer">Wet Lab ▾</span>
+            <h1 className="cursor-pointer">Wet Lab ▾</h1>
             <div className="absolute top-full left-1/2 -translate-x-1/2
               hidden group-hover:flex flex-col
               bg-[#101317]
@@ -63,7 +63,7 @@ function Header() {
 
           {/* DRY LAB */}
           <div className="relative group">
-            <span className="cursor-pointer">Dry Lab ▾</span>
+            <h1 className="cursor-pointer">Dry Lab ▾</h1>
             <div className="absolute top-full left-1/2 -translate-x-1/2
               hidden group-hover:flex flex-col
               bg-[#101317]
@@ -78,7 +78,7 @@ function Header() {
 
           {/* ENGAGEMENT */}
           <div className="relative group">
-            <span className="cursor-pointer">Engagement ▾</span>
+            <h1 className="cursor-pointer">Engagement ▾</h1>
             <div className="absolute top-full left-1/2 -translate-x-1/2
               hidden group-hover:flex flex-col
               bg-[#101317]
@@ -95,7 +95,7 @@ function Header() {
 
           {/* TEAM */}
           <div className="relative group">
-            <span className="cursor-pointer">Team ▾</span>
+            <h1 className="cursor-pointer">Team ▾</h1>
             <div className="absolute top-full left-1/2 -translate-x-1/2
               hidden group-hover:flex flex-col
               bg-[#101317]
@@ -109,10 +109,6 @@ function Header() {
               <Link to="/team/sponsers">Sponsors</Link>
             </div>
           </div>
-
-          {/* AWARDS */}
-          <Link to="/awards">Awards</Link>
-
         </nav>
       </div>
     </header>

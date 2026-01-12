@@ -36,9 +36,6 @@ import Collaboration from "./pages/engagement/collab";
 import Sustainability from "./pages/engagement/sustainability";
 import Education from "./pages/engagement/edu";
 
-// AWARDS
-import Awards from "./pages/awards";
-
 function App() {
   return (
     <Router>
@@ -85,8 +82,6 @@ function App() {
             <Route path="/engagement/sustainability" element={<Sustainability />} />
             <Route path="/engagement/education" element={<Education />} />
 
-            {/* AWARDS */}
-            <Route path="/awards" element={<Awards />} />
           </Routes>
         </main>
 
