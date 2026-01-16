@@ -18,42 +18,49 @@ export default function Home() {
          SECTION 2 — PINNED TEXT
       ========================== */
       if (section2Ref.current) {
-        const words = section2Ref.current.querySelectorAll(".word");
+        const words =
+          section2Ref.current.querySelectorAll<HTMLSpanElement>(".word");
 
-        gsap.timeline({
-          scrollTrigger: {
-            trigger: section2Ref.current,
-            start: "top top",
-            end: "+=250%",
-            pin: true,
-            scrub: 1,
-          },
-        }).from(words, {
-          y: 32,
-          opacity: 0,
-          stagger: 0.35,
-          ease: "power2.out",
-        });
+        gsap
+          .timeline({
+            scrollTrigger: {
+              trigger: section2Ref.current,
+              start: "top top",
+              end: "+=250%",
+              pin: true,
+              scrub: 1,
+              anticipatePin: 1,
+            },
+          })
+          .from(words, {
+            y: 30,
+            opacity: 0,
+            stagger: 0.35,
+            ease: "power2.out",
+          });
       }
 
       /* =========================
          SECTION 4 — LOSS OF CONTROL
       ========================== */
       if (section4Ref.current) {
-        const left = section4Ref.current.querySelectorAll(".left-word");
-        const right = section4Ref.current.querySelectorAll(".right-word");
+        const section4 = section4Ref.current;
+        const left = section4.querySelectorAll(".left-word");
+        const right = section4.querySelectorAll(".right-word");
         const image =
-          section4Ref.current.querySelector(".bacteria-image");
+          section4.querySelector<HTMLImageElement>(".bacteria-image");
 
-        gsap.timeline({
-          scrollTrigger: {
-            trigger: section4Ref.current,
-            start: "top top",
-            end: "+=500%",
-            pin: true,
-            scrub: 1,
-          },
-        })
+        gsap
+          .timeline({
+            scrollTrigger: {
+              trigger: section4,
+              start: "top top",
+              end: "+=500%",
+              pin: true,
+              scrub: 1,
+              anticipatePin: 1,
+            },
+          })
           .from(left, {
             x: -120,
             opacity: 0,
@@ -84,59 +91,78 @@ export default function Home() {
             "<"
           )
           .to(image, {
-            scale: 8,
+            scale: 4,
             ease: "power3.inOut",
           })
           .to(
-            section4Ref.current,
+            section4,
             {
               backgroundColor: "#000000",
               ease: "none",
             },
-            "-=0.5"
+            "-=0.4"
           );
       }
 
       /* =========================
-         SECTION 5 — QUESTION / YES
+         SECTION 5 — QUESTION → YES
       ========================== */
       if (section5Ref.current) {
-        const q = section5Ref.current.querySelector(".question");
-        const a = section5Ref.current.querySelector(".answer");
+        const section5 = section5Ref.current;
+        const question =
+          section5.querySelector<HTMLHeadingElement>(".question");
+        const answer =
+          section5.querySelector<HTMLDivElement>(".answer");
 
-        gsap.timeline({
-          scrollTrigger: {
-            trigger: section5Ref.current,
-            start: "top top",
-            end: "+=300%",
-            pin: true,
-            scrub: 1,
-          },
-        })
-          .from(q, {
-            y: -30,
+        gsap
+          .timeline({
+            scrollTrigger: {
+              trigger: section5,
+              start: "top top",
+              end: "+=350%",
+              pin: true,
+              scrub: true,
+              anticipatePin: 1,
+            },
+          })
+
+          // Question appears on black
+          .from(question, {
             opacity: 0,
+            y: 20,
             ease: "power2.out",
           })
-          .from(
-            a,
-            {
-              scale: 0.3,
-              opacity: 0,
-              ease: "back.out(1.7)",
-            },
-            "+=0.6"
-          )
+
+          // Background + question invert gradually
           .to(
-            section5Ref.current,
+            section5,
             {
               backgroundColor: "#dda15e",
               ease: "none",
             },
-            "<"
+            "+=0.4"
           )
           .to(
-            [q, a],
+            question,
+            {
+              color: "#000000",
+              ease: "none",
+            },
+            "<"
+          )
+
+          // YES revealed last
+          .from(
+            answer,
+            {
+              opacity: 0,
+              y: 40,
+              ease: "power2.out",
+            },
+            "+=0.4"
+          )
+          .to(
+            answer,
             {
               color: "#000000",
               ease: "none",
@@ -178,36 +204,26 @@ export default function Home() {
         className="h-screen flex items-center justify-center"
       >
         <div className="max-w-5xl px-10 space-y-6">
-          <h2 className="text-6xl text-[#FEFAE0] font-light">
-            {"Plastic is everywhere".split(" ").map((w, i) => (
-              <span key={i} className="word inline-block mr-4">
-                {w}
-              </span>
-            ))}
-          </h2>
-
-          <h2 className="text-6xl text-[#FEFAE0] font-light">
-            {"Some of it is biodegradable".split(" ").map((w, i) => (
-              <span key={i} className="word inline-block mr-4">
-                {w}
-              </span>
-            ))}
-          </h2>
-
-          <h2 className="text-6xl text-[#FEFAE0] font-light">
-            {"Most of it lasts forever.".split(" ").map((w, i) => (
-              <span
-                key={i}
-                className={`word inline-block mr-4 ${
-                  w.toLowerCase().includes("forever")
-                    ? "text-[#dda15e]"
-                    : ""
-                }`}
-              >
-                {w}
-              </span>
-            ))}
-          </h2>
+          {[
+            "Plastic is everywhere",
+            "Some of it is biodegradable",
+            "Most of it lasts forever.",
+          ].map((line, i) => (
+            <h2 key={i} className="text-6xl text-[#FEFAE0] font-light">
+              {line.split(" ").map((w, j) => (
+                <span
+                  key={j}
+                  className={`word inline-block mr-4 ${
+                    w.toLowerCase().includes("forever")
+                      ? "text-[#dda15e]"
+                      : ""
+                  }`}
+                >
+                  {w}
+                </span>
+              ))}
+            </h2>
+          ))}
         </div>
       </section>
 
@@ -216,8 +232,9 @@ export default function Home() {
         ref={section4Ref}
         className="relative h-screen flex items-center justify-center bg-[#101317]"
       >
-        <div className="grid grid-cols-3 gap-14 max-w-6xl px-10">
-          <div className="space-y-4 text-4xl text-[#FEFAE0] font-light uppercase z-20">
+        <div className="relative grid grid-cols-2 gap-14 max-w-6xl px-10">
+          {/* LEFT */}
+          <div className="space-y-6 text-6xl text-[#FEFAE0] font-light z-20">
             {["Biodegradable", "plastic", "are", "made", "by", "bacteria"].map(
               (w, i) => (
                 <div key={i} className="left-word">
@@ -227,15 +244,8 @@ export default function Home() {
             )}
           </div>
 
-          <div className="flex justify-center overflow-visible z-30">
-            <img
-              src={bacteria}
-              alt="bacteria"
-              className="bacteria-image w-64 h-64 opacity-0 scale-50 object-contain"
-            />
-          </div>
-
-          <div className="space-y-4 text-4xl text-[#FEFAE0] font-light uppercase text-right z-10">
+          {/* RIGHT */}
+          <div className="space-y-6 text-6xl text-[#FEFAE0] font-light text-right justify-self-end z-10">
             {[
               "Their",
               "properties",
@@ -249,19 +259,29 @@ export default function Home() {
               </div>
             ))}
           </div>
+
+          {/* CENTER IMAGE */}
+          <div className="absolute inset-0 flex items-center justify-center z-30 pointer-events-none">
+            <img
+              src={bacteria}
+              alt="bacteria"
+              className="bacteria-image w-64 h-64 opacity-0 scale-50 object-contain"
+            />
+          </div>
         </div>
       </section>
 
       {/* SECTION 5 */}
       <section
         ref={section5Ref}
-        className="h-screen flex flex-col items-center justify-center bg-[#dda15e]"
+        className="h-screen flex flex-col items-center justify-center bg-black"
       >
-        <h2 className="question text-4xl text-[#FEFAE0] font-light tracking-wide mb-24">
-          Can we choose how plastic behaves?
+        <h2 className="question text-6xl text-white font-light mb-24">
+          Can we change the way plastic behaves?
         </h2>
-        <div className="answer text-8xl text-[#FEFAE0] font-light tracking-widest">
-          YES
+
+        <div className="answer text-6xl text-white font-light">
+          YES!
         </div>
       </section>
 
