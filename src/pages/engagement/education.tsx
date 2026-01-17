@@ -1,4 +1,3 @@
-
 function Education() {
   const renderTitleHover = (text: string) =>
     text.split("").map((char, i) => (
@@ -21,21 +20,45 @@ function Education() {
       <div className="flex w-full min-h-screen px-10 gap-5">
         {/* LEFT SIDEBAR */}
         <aside className="w-[10%] px-6 sticky mt-5 top-32 self-start">
-          <nav className="flex flex-col gap-7 text-lg text-white/80">
-            <a href="#overview" className="hover:text-white">
+          <nav className="flex flex-col gap-7 text-lg">
+            <a
+              href="#overview"
+              className="group relative w-fit text-white/80 hover:text-white transition-colors"
+            >
               Overview
+              <span className="absolute -bottom-1 left-0 h-[2px] w-0 bg-[#dda13e] transition-all duration-300 group-hover:w-full" />
             </a>
-            <a href="#six-to-ten" className="hover:text-white">
+
+            <a
+              href="#six-to-ten"
+              className="group relative w-fit text-white/80 hover:text-white transition-colors"
+            >
               6–10 Years
+              <span className="absolute -bottom-1 left-0 h-[2px] w-0 bg-[#dda13e] transition-all duration-300 group-hover:w-full" />
             </a>
-            <a href="#eleven-to-fifteen" className="hover:text-white">
+
+            <a
+              href="#eleven-to-fifteen"
+              className="group relative w-fit text-white/80 hover:text-white transition-colors"
+            >
               11–15 Years
+              <span className="absolute -bottom-1 left-0 h-[2px] w-0 bg-[#dda13e] transition-all duration-300 group-hover:w-full" />
             </a>
-            <a href="#sixteen-to-eighteen" className="hover:text-white">
+
+            <a
+              href="#sixteen-to-eighteen"
+              className="group relative w-fit text-white/80 hover:text-white transition-colors"
+            >
               16–18 Years
+              <span className="absolute -bottom-1 left-0 h-[2px] w-0 bg-[#dda13e] transition-all duration-300 group-hover:w-full" />
             </a>
-            <a href="#college" className="hover:text-white">
+
+            <a
+              href="#college"
+              className="group relative w-fit text-white/80 hover:text-white transition-colors"
+            >
               College Students
+              <span className="absolute -bottom-1 left-0 h-[2px] w-0 bg-[#dda13e] transition-all duration-300 group-hover:w-full" />
             </a>
           </nav>
         </aside>
