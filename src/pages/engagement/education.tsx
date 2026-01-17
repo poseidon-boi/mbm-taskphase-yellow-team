@@ -1,3 +1,5 @@
+import React from "react";
+
 function Education() {
   const renderTitleHover = (text: string) =>
     text.split("").map((char, i) => (
