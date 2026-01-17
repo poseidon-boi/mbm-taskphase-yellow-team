@@ -1,5 +1,3 @@
-import React from "react";
-
 function Description() {
   const renderTitleHover = (text: string) =>
     text.split("").map((char, i) => (
