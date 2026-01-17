@@ -96,6 +96,16 @@ const membersData = [
   },
 ];
 
+const renderTitleHover = (text: string) =>
+    text.split("").map((char, i) => (
+      <span
+        key={i}
+        className="inline-block transition-colors duration-200 hover:text-[#dda15e]"
+      >
+        {char === " " ? "\u00A0" : char}
+      </span>
+    ));
+
 function Members() {
   const [index, setIndex] = useState(1);
   const [transition, setTransition] = useState(true);
@@ -113,14 +123,16 @@ function Members() {
   };
 
   return (
-    <section className="bg-[#1F2A13] min-h-screen pt-32 pb-32 px-16 relative">
+    <section className="bg-[#1F2A13] min-h-screen pb-32 px-16 relative">
       {/* Header fade buffer */}
       <div className="absolute top-0 left-0 w-full h-32 bg-gradient-to-b from-[#1F2A13] to-transparent pointer-events-none z-40" />
 
       {/* Title */}
-      <h1 className="text-[#FEFAE0] text-4xl font-bold text-center mb-16">
-        Meet the team!
-      </h1>
+      <div className="pt-32 pb-24 flex justify-center">
+        <h1 className="text-6xl text-white font-bold">
+          {renderTitleHover("Meet the Team!")}
+        </h1>
+      </div>
 
       {/* Carousel */}
       <div className="w-full flex items-center justify-center relative overflow-hidden">
