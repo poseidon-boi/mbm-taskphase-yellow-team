@@ -43,7 +43,7 @@ const membersData = [
   {
     image: jatin,
     name: "Jatin Rudraswamymath",
-    subsystem: "Dry Lab",
+    subsystem: "HnS",
     fuel: "The crushing weight of existence",
   },
   {

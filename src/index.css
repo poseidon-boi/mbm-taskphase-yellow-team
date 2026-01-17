@@ -1,16 +1,45 @@
-/* This forces the scroll container to be the browser window */
-html,
+@import "tailwindcss";
+
+/* --- Scroll control (CRITICAL) --- */
 body {
-  overflow: visible !important;
-  height: auto !important;
-  min-height: 100% !important;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  background-color: #283618;
+  font-family: "PT Sans", sans-serif;
+
+  /* locked during loader */
+  overflow: hidden;
 }
 
-/* If you have a root div from Vite/React */
+/* unlock after loader */
+body.loaded {
+  overflow: auto;
+}
+
+/* allow ScrollTrigger to use window */
+html,
 #root {
-  overflow: visible !important;
+  width: 100%;
+  min-height: 100%;
 }
 
+/* smooth scroll (fine with GSAP since you scrub) */
+html {
+  scroll-behavior: smooth;
+}
+
+/* typography */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Oswald", sans-serif;
+}
+
+/* selection color */
 ::selection {
   background-color: #dda15e;
   color: #000;
@@ -21,8 +50,7 @@ body {
   color: #000;
 }
 
-@import "tailwindcss";
-
+/* optional utility animations (safe) */
 @keyframes slideInRight {
   from {
     opacity: 0;
@@ -51,37 +79,4 @@ body {
 
 .animate-slide-in-left {
   animation: slideInLeft 0.5s ease-out;
-}
-
-html,
-body,
-#root {
-  margin: 0;
-  padding: 0;
-  width: 100%;
-}
-
-body {
-  background-color: #283618;
-  font-family: "PT Sans", sans-serif;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-family: "Oswald", sans-serif;
-}
-
-html {
-  scroll-behavior: smooth;
-}
-
-html,
-body {
-  height: auto;
-  min-height: 100%;
-  overflow-y: auto;
 }

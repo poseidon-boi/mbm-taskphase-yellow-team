@@ -1,6 +1,13 @@
+import { useEffect, useState } from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 import ScrollToTop from "./components/ScrollToTop";
+import Loader from "./components/Loader";
+
+import loadingVideo from "./assets/loading.mp4";
+import bgvid from "./assets/bg-vid.mp4";
+import plastic from "./assets/plastic.png";
+import compound from "./assets/compound.png";
 
 import Header from "./components/header";
 import Footer from "./components/footer";
@@ -31,12 +38,50 @@ import Sustainability from "./pages/engagement/sustainability";
 import Education from "./pages/engagement/education";
 
 function App() {
+  const [loading, setLoading] = useState(true);
+
+useEffect(() => {
+  let loaded = 0;
+  const total = 4; // 👈 MUST match assets below
+
+  const done = () => {
+    loaded += 1;
+
+    if (loaded === total) {
+      setTimeout(() => {
+        setLoading(false);
+        document.body.classList.add("loaded");
+      }, 1000); // purposeful 1s delay
+    }
+  };
+
+  // preload images
+  [plastic, compound].forEach(src => {
+    const img = new Image();
+    img.src = src;
+    img.onload = done;
+  });
+
+  // preload hero video
+  const heroVideo = document.createElement("video");
+  heroVideo.src = bgvid;
+  heroVideo.onloadeddata = done;
+
+  // preload loader video
+  const loaderVideo = document.createElement("video");
+  loaderVideo.src = loadingVideo;
+  loaderVideo.onloadeddata = done;
+}, []);
+
+  if (loading) {
+    return <Loader onComplete={() => {}} />;
+  }
+
   return (
     <Router>
       <ScrollToTop />
       <Header />
 
-      {/* IMPORTANT: let BODY scroll */}
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/home" element={<Home />} />
