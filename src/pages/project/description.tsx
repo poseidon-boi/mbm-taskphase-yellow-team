@@ -1,79 +1,88 @@
+import React from "react";
+
 function Description() {
+  const renderTitleHover = (text: string) =>
+    text.split("").map((char, i) => (
+      <span
+        key={i}
+        className="inline-block transition-colors duration-200 hover:text-[#dda15e]"
+      >
+        {char === " " ? "\u00A0" : char}
+      </span>
+    ));
+
   return (
-    <section className="bg-[#1F2A13] min-h-screen pt-32 px-16 text-white">
-      
-      {/* PAGE TITLE */}
-      <h1 className="text-4xl font-bold mb-10 flex justify-center p-75">
-        Description
-      </h1>
+    <div className="w-full bg-[#1F2A13] text-white">
 
-      <div className="flex gap-16">
-
-        {/* LEFT: REFERENCE LINKS (10%) */}
-        <div className="w-[10%] flex flex-col gap-6 text-xl">
-
-          <a
-            href="#hello"
-            className="relative group w-fit"
-          >
-            hello
-            <span
-              className="absolute left-0 -bottom-1 h-[2px] w-0 bg-[#EAC49A]
-                         transition-all duration-300 group-hover:w-full"
-            />
-          </a>
-
-          <a
-            href="#bye"
-            className="relative group w-fit"
-          >
-            bye
-            <span
-              className="absolute left-0 -bottom-1 h-[2px] w-0 bg-[#EAC49A]
-                         transition-all duration-300 group-hover:w-full"
-            />
-          </a>
-
-        </div>
-
-        {/* RIGHT: CONTENT (70%) */}
-        <div className="w-[90%] bg-[#FEFAE0] text-black p-10 rounded">
-
-          {/* SECTION: HELLO */}
-          <h1 id="hello" className="text-5xl scroll-mt-32">
-            hello
-          </h1>
-
-          <div className="py-3">
-            <hr className="border-0 h-[2px] bg-[#1F2A13]" />
-          </div>
-
-          <p className="text-lg p-3">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic ex ut
-            officia reiciendis omnis odio quae beatae accusantium consequuntur,
-            at commodi culpa, rerum repudiandae, velit corrupti autem.
-            Assumenda, totam. Lorem ipsum dolor sit amet, consectetur adipisicing
-            elit. Odit, illo? Eligendi enim natus delectus fugiat. Animi dolorum
-            voluptatem culpa sit illum rerum, magnam aperiam? Veniam nam
-            repellendus facere omnis voluptate!
-          </p>
-
-          {/* SECTION: BYE */}
-          <h1 id="bye" className="text-3xl my-6 scroll-mt-32">
-            bye
-          </h1>
-
-          <p className="text-lg p-3">
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-            Exercitationem nulla, sit architecto modi molestiae nobis a esse
-            consequuntur. Tenetur in sapiente eaque quis id iste et explicabo
-            velit quibusdam perspiciatis. Lorem ipsum dolor, sit amet consectetur
-            adipisicing elit. Error quam similique aut.
-          </p>
-
-        </div>
+      {/* ===== TITLE ROW (FULL WIDTH) ===== */}
+      <div className="pt-32 pb-24 flex justify-center">
+        <h1 className="text-6xl font-bold">
+          {renderTitleHover("Description")}
+        </h1>
       </div>
-    </section>
+
+      {/* ===== TWO-COLUMN ROW ===== */}
+      <div className="flex w-full min-h-screen px-10">
+
+        {/* LEFT COLUMN — STICKY */}
+        <aside className="w-[10%] px-8 sticky top-32 mt-10 self-start">
+          <nav className="flex flex-col gap-6 text-xl">
+            <a
+              href="#hello"
+              className="group relative w-fit text-white/80 hover:text-white"
+            >
+              hello
+              <span className="absolute -bottom-1 left-0 w-0 h-[2px] bg-[#dda15e] transition-all duration-300 group-hover:w-full" />
+            </a>
+
+            <a
+              href="#bye"
+              className="group relative w-fit text-white/80 hover:text-white"
+            >
+              bye
+              <span className="absolute -bottom-1 left-0 w-0 h-[2px] bg-[#dda15e] transition-all duration-300 group-hover:w-full" />
+            </a>
+          </nav>
+        </aside>
+
+        {/* RIGHT COLUMN — CONTENT */}
+        <main className="w-[90%] pb-32">
+          <div className="bg-[#FEFAE0] text-black p-16 rounded-lg shadow-2xl">
+
+            {/* SECTION: HELLO */}
+            <section className="mb-32">
+              <div id="hello" className="scroll-mt-32" />
+
+              <h2 className="text-6xl font-semibold mb-4">hello</h2>
+              <div className="h-[2px] bg-black/30 mb-8" />
+
+              <p className="text-xl mb-6">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              </p>
+              <p className="text-xl">
+                Eligendi enim natus delectus fugiat. Animi dolorum voluptatem.
+              </p>
+            </section>
+
+            {/* SECTION: BYE */}
+            <section>
+              <div id="bye" className="scroll-mt-32" />
+
+              <h2 className="text-6xl font-semibold mb-4">bye</h2>
+              <div className="h-[2px] bg-black/30 mb-8" />
+
+              <p className="text-xl mb-6">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              </p>
+              <p className="text-xl">
+                Tenetur in sapiente eaque quis id iste.
+              </p>
+            </section>
+
+          </div>
+        </main>
+      </div>
+    </div>
   );
 }
 

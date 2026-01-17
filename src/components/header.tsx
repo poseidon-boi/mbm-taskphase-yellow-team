@@ -33,14 +33,10 @@ function Header() {
               items-center w-44 rounded-lg gap-2
               text-sm"
             >
+              <Link to="/project/background">Background</Link>
               <Link to="/project/description">Description</Link>
               <Link to="/project/design">Design</Link>
-              <Link to="/project/poc">Proof of Concept</Link>
               <Link to="/project/engineering">Engineering</Link>
-              <Link to="/project/results">Results</Link>
-              <Link to="/project/implementation">Implementation</Link>
-              <Link to="/project/safety">Safety</Link>
-              <Link to="/project/contribution">Contribution</Link>
             </div>
           </div>
 
@@ -56,8 +52,6 @@ function Header() {
             >
               <Link to="/wetlab/experiments">Experiments</Link>
               <Link to="/wetlab/notebook">Notebook</Link>
-              <Link to="/wetlab/measurement">Measurement</Link>
-              <Link to="/wetlab/labsafety">Lab Safety</Link>
             </div>
           </div>
 
@@ -87,7 +81,6 @@ function Header() {
               text-sm"
             >
               <Link to="/engagement/hp">Human Practices</Link>
-              <Link to="/engagement/collab">Collaboration</Link>
               <Link to="/engagement/sustainability">Sustainability</Link>
               <Link to="/engagement/education">Education</Link>
             </div>
@@ -106,7 +99,6 @@ function Header() {
               <Link to="/team/members">Members</Link>
               <Link to="/team/attributions">Attributions</Link>
               <Link to="/team/medals">Medals</Link>
-              <Link to="/team/sponsers">Sponsors</Link>
             </div>
           </div>
         </nav>

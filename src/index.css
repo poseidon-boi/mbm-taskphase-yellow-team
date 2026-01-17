@@ -1,3 +1,15 @@
+/* This forces the scroll container to be the browser window */
+html, body {
+  overflow: visible !important;
+  height: auto !important;
+  min-height: 100% !important;
+}
+
+/* If you have a root div from Vite/React */
+#root {
+  overflow: visible !important;
+}
+
 @import "tailwindcss";
 
 @keyframes slideInRight {
@@ -35,7 +47,6 @@ html, body, #root {
   margin: 0;
   padding: 0;
   width: 100%;
-  overflow-x: hidden;
 }
 
 body {
@@ -49,4 +60,10 @@ h1, h2, h3, h4, h5, h6 {
 
 html {
   scroll-behavior: smooth;
+}
+
+html, body {
+  height: auto;
+  min-height: 100%;
+  overflow-y: auto;
 }
