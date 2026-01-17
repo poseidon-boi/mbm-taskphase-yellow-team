@@ -198,7 +198,7 @@ function Education() {
                 Genetic Circuits Card-Based Game
               </h3>
 
-              <p className="font-bold mt- text-2xl">Aim</p>
+              <p className="font-bold mt-4 text-2xl">Aim</p>
               <p className="mb-4 text-lg">
                 This activity aimed to help students understand how genetic
                 circuits function through a simple and interactive learning
