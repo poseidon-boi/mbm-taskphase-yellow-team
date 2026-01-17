@@ -1,5 +1,7 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
+import ScrollToTop from "./components/ScrollToTop";
+
 import Header from "./components/header";
 import Footer from "./components/footer";
 import Home from "./pages/home";
@@ -31,6 +33,7 @@ import Education from "./pages/engagement/education";
 function App() {
   return (
     <Router>
+      <ScrollToTop/>
       <Header />
 
       {/* IMPORTANT: let BODY scroll */}

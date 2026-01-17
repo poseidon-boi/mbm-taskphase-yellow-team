@@ -10,6 +10,16 @@ html, body {
   overflow: visible !important;
 }
 
+::selection {
+  background-color: #dda15e;
+  color: #000;
+}
+
+::-moz-selection {
+  background-color: #dda15e;
+  color: #000;
+}
+
 @import "tailwindcss";
 
 @keyframes slideInRight {
