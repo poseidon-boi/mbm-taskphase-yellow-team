@@ -26,14 +26,14 @@ import Attributions from "./pages/team/attributions";
 import Medals from "./pages/team/medals";
 
 // ENGAGEMENT
-import HP from "./pages/engagement/hp";
+import HP from "./pages/engagement/humanpractices";
 import Sustainability from "./pages/engagement/sustainability";
 import Education from "./pages/engagement/education";
 
 function App() {
   return (
     <Router>
-      <ScrollToTop/>
+      <ScrollToTop />
       <Header />
 
       {/* IMPORTANT: let BODY scroll */}

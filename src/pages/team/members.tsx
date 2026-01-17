@@ -14,23 +14,86 @@ import reeya from "../../assets/reeya.png";
 import ruchi from "../../assets/ruchi.jpeg";
 import sharon from "../../assets/sharon.png";
 import shreyas from "../../assets/shreyas.png";
-import tanushree from "../../assets/tanushree.png";
 
 const membersData = [
-  { image: aaryan, name: "Aaryan Joshi", subsystem: "Dry Lab", fuel: "Copious amounts of food" },
-  { image: aniket, name: "Aniket Mohapatra", subsystem: "Research, Wet Lab", fuel: "10% science, 90% 'we're already too deep to quit'" },
-  { image: dheekshidhaa, name: "Dheekshidhaa A.", subsystem: "Wet Lab", fuel: "The three Cs- Caffeine, Chaos, Curiosity" },
-  { image: fiona, name: "Fiona Pinto", subsystem: "Research", fuel: "Caffeine and panic" },
-  { image: jatin, name: "Jatin Rudraswamymath", subsystem: "Dry Lab", fuel: "The crushing weight of existence" },
-  { image: johanna, name: "Johanna Dsouza", subsystem: "Wet Lab", fuel: "Powered by extra theekhi pani-puri and good company - not necessarily human" },
-  { image: joshua, name: "Joshua Monteiro", subsystem: "Dry Lab, HnS", fuel: "Water and shawarma" },
-  { image: nandan, name: "Nandan P Nair", subsystem: "Wet Lab", fuel: "Late night caffeinated drinks for all nighters and deadline pressure" },
-  { image: nivedita, name: "Nivedita Pai", subsystem: "HP", fuel: "Staying optimistic while everything else crashed down" },
-  { image: reeya, name: "Reeya Wani", subsystem: "Wet Lab, Research", fuel: "A rotation of diet Coke, coffee and monster" },
-  { image: ruchi, name: "Ruchi Pawar", subsystem: "Wiki, SMGD", fuel: "Chicken biryani & Diet Coke" },
-  { image: sharon, name: "Sharon Liz Thomas", subsystem: "Research", fuel: "The belief that science suffering builds character" },
-  { image: shreyas, name: "Shreyas Seshadri", subsystem: "Dry Lab", fuel: "Om Xerox chai" },
-  { image: tanushree, name: "Tanushree Dhirendra Trivedi", subsystem: "HP, HnS", fuel: "Caffine, repeated attempts and questionable optimism" },
+  {
+    image: aaryan,
+    name: "Aaryan Joshi",
+    subsystem: "Dry Lab",
+    fuel: "Copious amounts of food",
+  },
+  {
+    image: aniket,
+    name: "Aniket Mohapatra",
+    subsystem: "Research, Wet Lab",
+    fuel: "10% science, 90% 'we're already too deep to quit'",
+  },
+  {
+    image: dheekshidhaa,
+    name: "Dheekshidhaa A.",
+    subsystem: "Wet Lab",
+    fuel: "The three Cs- Caffeine, Chaos, Curiosity",
+  },
+  {
+    image: fiona,
+    name: "Fiona Pinto",
+    subsystem: "Research",
+    fuel: "Caffeine and panic",
+  },
+  {
+    image: jatin,
+    name: "Jatin Rudraswamymath",
+    subsystem: "Dry Lab",
+    fuel: "The crushing weight of existence",
+  },
+  {
+    image: johanna,
+    name: "Johanna Dsouza",
+    subsystem: "Wet Lab",
+    fuel: "Powered by extra theekhi pani-puri and good company - not necessarily human",
+  },
+  {
+    image: joshua,
+    name: "Joshua Monteiro",
+    subsystem: "Dry Lab, HnS",
+    fuel: "Water and shawarma",
+  },
+  {
+    image: nandan,
+    name: "Nandan P Nair",
+    subsystem: "Wet Lab",
+    fuel: "Late night caffeinated drinks for all nighters and deadline pressure",
+  },
+  {
+    image: nivedita,
+    name: "Nivedita Pai",
+    subsystem: "HP",
+    fuel: "Staying optimistic while everything else crashed down",
+  },
+  {
+    image: reeya,
+    name: "Reeya Wani",
+    subsystem: "Wet Lab, Research",
+    fuel: "A rotation of diet Coke, coffee and monster",
+  },
+  {
+    image: ruchi,
+    name: "Ruchi Pawar",
+    subsystem: "Wiki, SMGD",
+    fuel: "Chicken biryani & Diet Coke",
+  },
+  {
+    image: sharon,
+    name: "Sharon Liz Thomas",
+    subsystem: "Research",
+    fuel: "The belief that science suffering builds character",
+  },
+  {
+    image: shreyas,
+    name: "Shreyas Seshadri",
+    subsystem: "Dry Lab",
+    fuel: "Om Xerox chai",
+  },
 ];
 
 function Members() {
@@ -51,7 +114,6 @@ function Members() {
 
   return (
     <section className="bg-[#1F2A13] min-h-screen pt-32 pb-32 px-16 relative">
-
       {/* Header fade buffer */}
       <div className="absolute top-0 left-0 w-full h-32 bg-gradient-to-b from-[#1F2A13] to-transparent pointer-events-none z-40" />
 
@@ -62,7 +124,6 @@ function Members() {
 
       {/* Carousel */}
       <div className="w-full flex items-center justify-center relative overflow-hidden">
-
         {/* LEFT ARROW */}
         <button
           onClick={prev}

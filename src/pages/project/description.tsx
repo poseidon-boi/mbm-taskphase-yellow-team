@@ -11,7 +11,6 @@ function Description() {
 
   return (
     <div className="w-full bg-[#1F2A13] text-white">
-
       {/* ===== TITLE ROW (FULL WIDTH) ===== */}
       <div className="pt-32 pb-24 flex justify-center">
         <h1 className="text-6xl font-bold">
@@ -21,7 +20,6 @@ function Description() {
 
       {/* ===== TWO-COLUMN ROW ===== */}
       <div className="flex w-full min-h-screen px-10">
-
         {/* LEFT COLUMN — STICKY */}
         <aside className="w-[10%] px-8 sticky top-32 mt-10 self-start">
           <nav className="flex flex-col gap-6 text-xl">
@@ -46,7 +44,6 @@ function Description() {
         {/* RIGHT COLUMN — CONTENT */}
         <main className="w-[90%] pb-32">
           <div className="bg-[#FEFAE0] text-black p-16 rounded-lg shadow-2xl">
-
             {/* SECTION: HELLO */}
             <section className="mb-32">
               <div id="hello" className="scroll-mt-32" />
@@ -72,11 +69,8 @@ function Description() {
               <p className="text-xl mb-6">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
               </p>
-              <p className="text-xl">
-                Tenetur in sapiente eaque quis id iste.
-              </p>
+              <p className="text-xl">Tenetur in sapiente eaque quis id iste.</p>
             </section>
-
           </div>
         </main>
       </div>

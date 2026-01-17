@@ -1,5 +1,6 @@
 /* This forces the scroll container to be the browser window */
-html, body {
+html,
+body {
   overflow: visible !important;
   height: auto !important;
   min-height: 100% !important;
@@ -52,8 +53,9 @@ html, body {
   animation: slideInLeft 0.5s ease-out;
 }
 
-
-html, body, #root {
+html,
+body,
+#root {
   margin: 0;
   padding: 0;
   width: 100%;
@@ -61,18 +63,24 @@ html, body, #root {
 
 body {
   background-color: #283618;
-  font-family: 'PT Sans', sans-serif;
+  font-family: "PT Sans", sans-serif;
 }
 
-h1, h2, h3, h4, h5, h6 {
-  font-family: 'Oswald', sans-serif;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Oswald", sans-serif;
 }
 
 html {
   scroll-behavior: smooth;
 }
 
-html, body {
+html,
+body {
   height: auto;
   min-height: 100%;
   overflow-y: auto;

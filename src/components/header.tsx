@@ -3,8 +3,7 @@ import { Link, useLocation } from "react-router-dom";
 function Header() {
   const location = useLocation();
 
-  const isHome =
-    location.pathname === "/" || location.pathname === "/home";
+  const isHome = location.pathname === "/" || location.pathname === "/home";
 
   return (
     <header
@@ -13,15 +12,13 @@ function Header() {
       `}
     >
       <div className="flex justify-between items-center px-8 py-5 text-[#F4F6F3]">
-
         {/* LOGO */}
         <Link to="/home" className="text-4xl font-medium tracking-wide">
           <h1>Yellow Team</h1>
         </Link>
 
         {/* NAV */}
-        <nav className="flex gap-6 text-2xl">
-
+        <nav className="flex gap-6 text-2xl mr-8">
           {/* PROJECT */}
           <div className="relative group">
             <h1 className="cursor-pointer">Project ▾</h1>
@@ -30,7 +27,7 @@ function Header() {
               hidden group-hover:flex flex-col
               bg-[#101317]
               p-3
-              items-center w-44 rounded-lg gap-2
+              items-center w-44 rounded-lg gap-4
               text-sm"
             >
               <Link to="/project/background">Background</Link>
@@ -43,11 +40,12 @@ function Header() {
           {/* WET LAB */}
           <div className="relative group">
             <h1 className="cursor-pointer">Wet Lab ▾</h1>
-            <div className="absolute top-full left-1/2 -translate-x-1/2
+            <div
+              className="absolute top-full left-1/2 -translate-x-1/2
               hidden group-hover:flex flex-col
               bg-[#101317]
               p-3
-              items-center w-44 rounded-lg gap-2
+              items-center w-44 rounded-lg gap-4
               text-sm"
             >
               <Link to="/wetlab/experiments">Experiments</Link>
@@ -58,11 +56,12 @@ function Header() {
           {/* DRY LAB */}
           <div className="relative group">
             <h1 className="cursor-pointer">Dry Lab ▾</h1>
-            <div className="absolute top-full left-1/2 -translate-x-1/2
+            <div
+              className="absolute top-full left-1/2 -translate-x-1/2
               hidden group-hover:flex flex-col
               bg-[#101317]
               p-3
-              items-center w-44 rounded-lg gap-2
+              items-center w-44 rounded-lg gap-4
               text-sm"
             >
               <Link to="/drylab/model">Model</Link>
@@ -73,11 +72,12 @@ function Header() {
           {/* ENGAGEMENT */}
           <div className="relative group">
             <h1 className="cursor-pointer">Engagement ▾</h1>
-            <div className="absolute top-full left-1/2 -translate-x-1/2
+            <div
+              className="absolute top-full left-1/2 -translate-x-1/2
               hidden group-hover:flex flex-col
               bg-[#101317]
               p-3
-              items-center w-44 rounded-lg gap-2
+              items-center w-44 rounded-lg gap-4
               text-sm"
             >
               <Link to="/engagement/hp">Human Practices</Link>
@@ -89,11 +89,12 @@ function Header() {
           {/* TEAM */}
           <div className="relative group">
             <h1 className="cursor-pointer">Team ▾</h1>
-            <div className="absolute top-full left-1/2 -translate-x-1/2
+            <div
+              className="absolute top-full left-1/2 -translate-x-1/2
               hidden group-hover:flex flex-col
               bg-[#101317]
               p-3
-              items-center w-44 rounded-lg gap-2
+              items-center w-44 rounded-lg gap-4
               text-sm"
             >
               <Link to="/team/members">Members</Link>

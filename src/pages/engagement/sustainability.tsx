@@ -86,19 +86,23 @@ function Sustainability() {
               <div id="SDG Goals" className="scroll-mt-32" />
               <h2 className="text-4xl font-semibold mb-4">SDG Goals</h2>
               <div className="h-[2px] bg-black/30 mb-6" />
-              <p className="text-xl">
-                Our initiative adheres to the United Nations’ 2030 Agenda for
-                Sustainable Development and encompasses multiple Sustainable
-                Development Goals (SDGs). In addition, we combine synthetic
-                biology, sustainable material design, and environmentally
-                conscious practices into our project proposal. Through reating a
-                new engineered strain of Cupriavidus Necator for the production
-                of a biodegradable/copolymer, Poly
-                (3-Hydroxybutyrate-co-4-Hydroxybutyrate) we will produce a
-                sustainable biomaterial that will ultimately replace lasting
-                petroleum products in all fields Where There are currently
-                plastic applications. Using Cupriavidus Necator as a source of a
-                new sustainable biomass.
+              <p className="mb-4 text-xl">
+                Our initiative aligns with the United Nations 2030 Agenda for
+                Sustainable Development and addresses multiple Sustainable
+                Development Goals (SDGs). By integrating synthetic biology,
+                sustainable material design, and environmentally conscious
+                practices, our project proposes a long-term solution to plastic
+                pollution.
+              </p>
+              <p className="mb-4 text-xl">
+                We aim to engineer a novel strain of Cupriavidus necator capable
+                of producing the biodegradable copolymer
+                Poly(3-hydroxybutyrate-co-4-hydroxybutyrate) [P(3HB-co-4HB)].
+                This sustainable biomaterial has the potential to replace
+                persistent petroleum-based plastics across a wide range of
+                applications. By using Cupriavidus necator as a renewable
+                biological chassis, our work contributes to the development of a
+                circular, bio-based economy.
               </p>
             </section>
 
@@ -138,15 +142,21 @@ function Sustainability() {
                     pollution and contamination.
                   </p>
 
+                  <p className="mb-4 text-lg">
+                    Conventional biomedical and industrial plastics such as
+                    polycaprolactone (PCL) degrade slowly, contributing to the
+                    accumulation of microplastics. These microplastics are
+                    associated with inflammation and long-term health risks. Our
+                    project addresses this issue by developing P(3HB-co-4HB), a
+                    fully biodegradable and biocompatible alternative to PCL.
+                  </p>
                   <p className="text-lg">
-                    Biomedical and industrial plastic products made of PCL
-                    contribute to the buildup of microplastics, which can lead
-                    to inflammation and long-term health challenges due to slow
-                    degradation. We address this by developing P(3HB-co-4HB), a
-                    completely biodegradable and biocompatible alternative to
-                    PCL. This polymer is naturally metabolized by living
-                    organisms and, through controlled microstructure regulation,
-                    enables safer medical materials—supporting SDG 3 by reducing
+                    Unlike conventional plastics, P(3HB-co-4HB) is naturally
+                    metabolized by living organisms upon degradation.
+                    Furthermore, our controlled polymer microstructure
+                    production approach—achieved through synthetic regulation of
+                    4HB flux—enables the creation of safer, medically engineered
+                    materials. In doing so, our work supports SDG 3 by reducing
                     human exposure to persistent and hazardous plastic waste
                     (Microplastics in Drinking-Water, 2019).
                   </p>
@@ -175,21 +185,20 @@ function Sustainability() {
                     by 2030.
                   </p>
                   <p className="mb-4 text-lg">
-                    A synthetic regulatory framework has been developed by us.
-                    The synthetic regulatory framework allows for precise
-                    regulation of polymer microstructures via biosynthesis
-                    instead of using traditional, substrate-dependent approaches
-                    to create custom microstructures for polymers. This provides
-                    an opportunity to enhance the characteristics and
-                    performance of polymers without using modified feedstock. In
-                    addition, synthetic regulatory frameworks are modular and
-                    scalable, making them a viable option for producing
-                    environmentally friendly polymers on a commercial scale.
-                    Therefore, as a result of the contributions made by our
-                    project to establish microbial biomanufacturing in the
-                    design complexity of these new bio-based plastic materials,
-                    it is expected to lead to the development of additional
-                    innovative industrial processes. (Huong et al., 2021)
+                    Our project introduces a synthetic regulatory framework that
+                    enables precise control over polymer microstructure through
+                    biosynthesis. This approach replaces traditional
+                    substrate-dependent methods, allowing polymer properties to
+                    be tuned without modifying feedstocks.
+                  </p>
+                  <p className="mb-4 text-lg">
+                    The modular and scalable nature of this regulatory framework
+                    makes it suitable for commercial-scale biomanufacturing of
+                    environmentally friendly polymers. By advancing microbial
+                    biomanufacturing and expanding the design complexity of
+                    bio-based plastics, our work contributes to innovation in
+                    sustainable industrial processes, directly supporting SDG 9
+                    (Huong et al., 2021).
                   </p>
                 </div>
                 <div
@@ -232,19 +241,23 @@ function Sustainability() {
 
                   <p className="font-bold mt-4 text-2xl">Target 12.4 (2020)</p>
                   <p className="mb-4 text-lg">
-                    By 2020, achieve the environmentally sound management of
-                    chemicals and all wastes throughout their life cycle, and
+                    Achieve the environmentally sound management of chemicals
+                    and all wastes throughout their life cycle, and
                     significantly reduce their release to air, water, and soil.
                   </p>
                   <p className="mb-4 text-lg">
-                    The world has a huge amount of plastic waste / and
-                    microplastics, even though this goal was set for 2020, this
-                    demonstrates that there is still very much need for new
-                    solutions using more sustainable materials. This project
-                    will be part of the global effort to create products made
-                    from sustainable materials to replace the traditional
-                    petroleum based plastics in production, using a biologically
-                    based polymer that doesn't create long lived microplas
+                    Despite global targets set for 2020, plastic waste and
+                    microplastic pollution remain critical environmental
+                    challenges. This underscores the urgent need for new,
+                    sustainable material solutions.
+                  </p>
+                  <p className="mb-4 text-lg">
+                    Our project contributes to global efforts to reduce reliance
+                    on petroleum-based plastics by developing a biologically
+                    derived polymer that degrades naturally and does not
+                    generate long-lived microplastics. By promoting the
+                    production and use of sustainable biomaterials, our work
+                    directly advances the objectives of SDG 12.
                   </p>
                 </div>
               </div>
@@ -274,24 +287,22 @@ function Sustainability() {
                   </p>
 
                   <p className="mb-4 text-lg">
-                    Plastic waste severely impacts marine ecosystems and affects
-                    all levels of ocean life. While the global objective of
-                    eliminating marine plastic pollution remains unchanged,
-                    long-term and sustainable solutions are still urgently
-                    needed. Our project addresses this challenge at the source
-                    by developing biodegradable plastic alternatives that can
-                    replace conventional long-lasting plastics in everyday
-                    applications.
+                    Plastic pollution poses severe threats to marine ecosystems
+                    and impacts all levels of ocean life. While international
+                    commitments to eliminate marine plastic pollution remain in
+                    place, effective and sustainable solutions are still
+                    required.
                   </p>
 
                   <p className="mb-4 text-lg">
-                    The introduction of <em>P(3HB-co-4HB)</em> as a sustainable
-                    biopolymer provides a promising pathway toward reducing
+                    Our project addresses marine pollution at its source by
+                    developing biodegradable plastic alternatives capable of
+                    replacing conventional long-lasting plastics. The adoption
+                    of P(3HB-co-4HB) offers a promising pathway to reduce
                     microplastic accumulation in aquatic environments. By
-                    enabling the replacement of persistent plastics with
-                    environmentally degradable materials, this approach directly
-                    supports the objectives of <strong>SDG 14</strong> and
-                    promotes long-term ocean health (Lu et al., 2018).
+                    replacing persistent plastics with environmentally
+                    degradable biopolymers, our work directly supports SDG 14
+                    and promotes long-term ocean health (Lu et al., 2018).
                   </p>
                 </div>
 

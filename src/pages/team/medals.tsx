@@ -9,13 +9,7 @@ function Medals() {
       </span>
     ));
 
-  const Button = ({
-    label,
-    href,
-  }: {
-    label: string;
-    href: string;
-  }) => (
+  const Button = ({ label, href }: { label: string; href: string }) => (
     <a
       href={href}
       className="
@@ -25,7 +19,6 @@ function Medals() {
   bg-[#1F2A13]
   text-white
   text-2xl
-  font-semibold
   shadow-lg
   border border-white/20
   transition-all
@@ -51,7 +44,6 @@ function Medals() {
 
       {/* ===== CONTENT ===== */}
       <div className="max-w-5xl mx-auto pb-32 space-y-20">
-
         {/* ===== BRONZE ===== */}
         <section>
           <h2 className="text-5xl font-semibold mb-6 text-[#CD7F32] flex justify-center">
@@ -85,7 +77,6 @@ function Medals() {
             <Button label="Best Part Collection" href="/project/design" />
           </div>
         </section>
-
       </div>
     </div>
   );
