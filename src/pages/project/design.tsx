@@ -1,4 +1,6 @@
 import { useEffect } from "react";
+import design1 from "../../assets/design1.png";
+import design2 from "../../assets/desing2.png";
 
 export default function Design() {
   useEffect(() => {
@@ -53,15 +55,7 @@ export default function Design() {
               <h2 className="text-4xl font-semibold mb-4">GOAL</h2>
               <div className="h-[2px] bg-black/30 mb-6" />
               <p className="text-xl">
-                Our objective was to ensure that 4-hydroxybutyrate (4HB)
-                production occurs exclusively in the presence of blue light.
-                To accomplish this, we introduced a light-sensitive promoter
-                system to regulate the expression of the gene responsible for
-                4HB synthesis. Since Cupriavidus necator H16 naturally produces
-                4HB constitutively, it was necessary to knock out the native
-                gene responsible for this activity. This genetic modification
-                eliminated baseline 4HB production in the absence of light,
-                allowing strict light-dependent control.
+                To ensure that there is 4HB production only in the presence of blue light, we planned to introduce a light sensitive promoter. To do that, it was necessary to knock out the native gene in the genome to prevent constitutive 4HB production even in the absence of blue light.
               </p>
             </section>
 
@@ -73,36 +67,39 @@ export default function Design() {
               <div className="h-[2px] bg-black/30 mb-6" />
 
               <p className="text-xl mb-6">
-                To regulate the expression of the gbd gene in Cupriavidus
-                necator H16, we employed a light-inducible promoter system
-                based on the transcription factor EL222. This system has
-                been extensively characterized across multiple organisms,
-                including Escherichia coli, yeast species such as Yarrowia
-                lipolytica, and mammalian cells. The light-responsive
-                transcription factor EL222 is derived from Erythrobacter
-                litoralis HTCC2594.
+                We intend to regulate the expression of the gbd gene in Cupriavidus necator H16 by using a light inducible promoter system. The EL222 system has been well studied across several bacterial species, particularly Escherichia coli (Camsund et al., 2021), yeast species such as Yarrowia lipolytica (Wang et al., 2022) and mammalian species (Motta-Mena et al., 2014). The light responsive transcription factor EL222 has been derived from Erythrobacter litoralis HTCC2594.
+
               </p>
 
               <p className="text-xl mb-6">
-                The EL222 system consists of two functional components: an
-                activation cassette and a response cassette. The activation
-                cassette is responsible for the production of the EL222
-                transcription factor, while the response cassette enables
-                light-dependent expression of downstream genes.
-              </p>
+                The system mainly consists of 2 domains: the activation cassette and the response cassette (Wang et al., 2022). The activation cassette is responsible for the production of EL222 DNA binding protein.
+</p>
 
               <p className="text-xl">
-                EL222 contains two distinct domains. The N-terminal region
-                comprises a Light-Oxygen-Voltage (LOV) domain, while the
-                C-terminal region contains a LuxR-type Helix-Turn-Helix
-                (HTH) DNA-binding domain. In the absence of light, the LOV
-                domain interacts with the HTH domain, preventing
-                dimerization and DNA binding. Upon illumination with blue
-                light at approximately 450 nm, a protein–flavin adduct is
-                formed within the LOV domain. This disrupts the LOV–HTH
-                interaction, enabling EL222 dimerization and binding to its
-                target DNA sequence.
-              </p>
+               The system mainly consists of 2 domains: the activation cassette and the response cassette (Wang et al., 2022). The activation cassette is responsible for the production of EL222 DNA binding protein.
+</p>
+<p className="text-xl">EL222 consists of 2 domains: a light oxygen voltage domain (LOV) in the N-terminal half, and a LuxR type Helix-Turn-Helix (HTH) DNA binding sequence in the C-terminal half (Takakado et al., 2018). In the dark, the LOV domain binds the HTH domain, covering the helix, preventing dimerization and binding to the DNA. Blue light illumination at 450 nm causes a protein-flavin adduct to be formed within the LOV domain, disrupting the LOV-HTH interaction and allowing the EL222 to bind to the DNA (Motta-Mena et al., 2014).
+
+               </p>
+               <div className="mt-8 text-gray-500 text-center">
+    <img
+      src={design1}
+      alt="Structure of the EL222 light-inducible transcription unit"
+      className="mx-auto w-full max-w-xl"
+    />
+    <p className="mt-2 text-sm">
+      Fig. 1: Structure of the EL222 light-inducible transcription unit used in <em>Escherichia coli</em> (Meng et al., 2024).
+    </p>
+  </div>
+  <div className="mt-8 text-gray-500 text-center">
+    <img
+      src={design2}
+      alt="Structure of the EL222 light-inducible transcription unit"
+      className="mx-auto w-full max-w-xl"
+    />
+    <p className="mt-2 text-sm">
+     Fig 2: The binding of the EL222 complex in presence of light in eukaryotic organisms. (Motta-Mena et al., 2014).  </p>
+  </div>
             </section>
 
             {/* ===== ACTIVATION CASSETTE ===== */}
@@ -113,57 +110,41 @@ export default function Design() {
               <div className="h-[2px] bg-black/30 mb-6" />
 
               <p className="text-xl mb-6">
-                The activation cassette consists of four primary components:
-              </p>
+                The general structure of the activation cassette consists of the following parts:
+</p>
 
               <ol className="list-decimal ml-8 text-xl mb-6 space-y-2">
                 <li>A promoter</li>
-                <li>A ribosome binding site (RBS)</li>
-                <li>The EL222 coding sequence (CDS)</li>
-                <li>A transcription terminator</li>
+                <li>Ribosomal Binding Sites (RBS)</li>
+                <li>EL222’s CDS</li>
+                <li>Terminator</li>
               </ol>
 
               <p className="text-xl mb-6">
-                All components used in the construction of the activation
-                cassette were bacterial-specific promoters, ribosome
-                binding sites, and terminators.
+                In our activation cassette construction, we have used bacterial specific promoters, RBS, and terminators.
               </p>
 
               <h3 className="text-2xl font-semibold mb-2">Promoter</h3>
               <p className="text-xl mb-6">
-                The promoter selected for driving EL222 expression was
-                pTac, a strong constitutive bacterial promoter. Studies
-                conducted in Cupriavidus necator H16 demonstrated that pTac
-                was the strongest promoter for driving GFP expression.
-                The promoter sequence was obtained from the plasmid
-                pz8-pTac sourced from the Addgene repository.
-              </p>
+                The promoter we have used is pTac, a strong bacterial promoter used to drive expression of EL222. In a study conducted on our chassis, Cupriavidus necator H16, it was observed that pTac was the strongest promoter driving constitutive production of the reporter gene GFP (Fukui et al., 2011). The sequence for this promoter was obtained from the plasmid pz8-pTac from the Addgene repository.
+</p>
 
               <h3 className="text-2xl font-semibold mb-2">
                 Ribosome Binding Site
               </h3>
               <p className="text-xl mb-6">
-                RBS1 was used as the ribosome binding site. Prior studies
-                showed that RBS1 produces high levels of expression, with
-                fluorescence intensity strongly dependent on RBS strength.
-                The sequence, including spacer regions flanking the Shine–
-                Dalgarno sequence, was obtained from the same study and
-                placed downstream of the promoter.
-              </p>
+                The RBS we have used is RBS1. From studies, it was concluded that the fluorescence observed depended upon the relative strength of the RBS used, with RBS1 showing high levels of expression. The sequence for the same was obtained from the same study, with the SD sequence flanked by spacers (Alagesan et al., 2018). It was inserted downstream of the promoter.
+</p>
 
               <h3 className="text-2xl font-semibold mb-2">EL222 CDS</h3>
               <p className="text-xl mb-6">
-                The complete EL222 coding sequence was retrieved from NCBI.
-                It is 675 base pairs long and was cloned downstream of RBS1.
-              </p>
+                The complete sequence for the EL222 protein was obtained from NCBI. It consists of 675 base pairs. This was inserted downstream of the RBS1.
+</p>
 
               <h3 className="text-2xl font-semibold mb-2">Terminator</h3>
               <p className="text-xl">
-                The rrnbT1 terminator was used to terminate transcription.
-                This terminator forms a highly stable hairpin structure
-                that causes RNA polymerase detachment and exhibits greater
-                than 95% termination efficiency.
-              </p>
+                The terminator we have used is rrnbT1. The highly stable hairpin structure of this terminator causes the detachment of the RNAP from the DNA. It is characterized to have more than 95% strength in termination. The part was characterized on Escherichia coli BW25113. The termination efficiency was calculated by measuring the fluorescence from the reporter gene GFP and RFP (Cambray et al., 2013).
+</p>
             </section>
 
             {/* ===== RESPONSE CASSETTE ===== */}

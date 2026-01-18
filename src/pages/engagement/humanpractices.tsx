@@ -79,7 +79,7 @@ function HumanPractices() {
                 As part of our Human Practices activities, we contacted Rigel Bioenviron Solutions Pvt. Ltd. to understand the current state of polyhydroxyalkanoates (PHAs) in India. We spoke to Dr. Sanchita Mukherjee, who provided important insights about production capabilities and application pathways for PHAs in the country. Dr. Mukherjee explained that PHAs are not produced at a large commercial scale in India. While PHAs are being made domestically, this production is limited and does not yet support widespread manufacturing for plastic applications. Rigel Bioenviron Solutions produces PHAs from industrial waste streams, showing a sustainable approach; however, these materials are not sold as mass-use plastics. Instead, the company primarily supplies PHAs to the food industry for niche, high-value uses. When we asked about potential end users of PHAs, Dr. Mukherjee mentioned the following:
               </p>
              
-              <ol className="list-disc ml-6 space-y-2 text-xl">
+              <ol className="list-disc ml-6 mb-6 space-y-2 text-xl">
   <li>
     Plastic manufacturers seeking sustainable material alternatives
   </li>
@@ -87,12 +87,12 @@ function HumanPractices() {
     Food and ice-cream producers for packaging and food-contact applications
   </li>
   <li>
-    Medical applications such as biodegradable sutures and food packaging
+    Medical applications such as sutures
   </li>
 </ol>
 
               <p className="text-xl mb-6">
-                where biodegradability and safety are crucial. This conversation uncovers a gap between the proven technical feasibility of PHAs and their widespread commercial adoption in India. It emphasized the importance of our project's goal to develop a copolymer with better applicability for sustainable plastic alternatives.
+                Where biodegradability and safety are crucial. This conversation uncovers a gap between the proven technical feasibility of PHAs and their widespread commercial adoption in India. It emphasized the importance of our project's goal to develop a copolymer with better applicability for sustainable plastic alternatives.
               </p></div>
                 <div className="w-[320px] flex-shrink-0">
     <img
@@ -138,7 +138,7 @@ function HumanPractices() {
   <div id="Potential-Sponsors" className="scroll-mt-32" />
 
   <h2 className="text-6xl font-semibold mb-4">
-    Potential Indian Sponsors
+    Potential Sponsors
   </h2>
   <div className="h-[2px] bg-black/30 mb-8" />
 
