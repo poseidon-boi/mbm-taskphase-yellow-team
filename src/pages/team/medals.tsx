@@ -76,7 +76,7 @@ function Medals() {
           <div className="flex  p-5 gap-6 flex-wrap justify-center">
             <Button label="Software" href="/drylab/software" />
             <Button label="Model" href="/drylab/model" />
-            <Button label="Best Part Collection" href="/project/design" />
+            <Button label="Education" href="/engagement/education" />
           </div>
         </section>
       </div>
