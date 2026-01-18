@@ -31,6 +31,7 @@ import Medals from "./pages/team/medals";
 import HP from "./pages/engagement/humanpractices";
 import Sustainability from "./pages/engagement/sustainability";
 import Education from "./pages/engagement/education";
+import IHP from "./pages/engagement/integratedhumanpractices";
 
 
 import bgvid from "./assets/bg-vid.mp4";
@@ -127,6 +128,7 @@ export default function AppContent() {
 
         {/* ENGAGEMENT */}
         <Route path="/engagement/hp" element={<HP />} />
+        <Route path="/engagement/ihp" element={<IHP />} />
         <Route path="/engagement/sustainability" element={<Sustainability />} />
         <Route path="/engagement/education" element={<Education />} />
       </Routes>

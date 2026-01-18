@@ -81,6 +81,7 @@ function Header() {
               text-sm"
             >
               <Link to="/engagement/hp">Human Practices</Link>
+              <Link to="/engagement/ihp">Integrated Human Practices</Link>
               <Link to="/engagement/sustainability">Sustainability</Link>
               <Link to="/engagement/education">Education</Link>
             </div>

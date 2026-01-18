@@ -95,7 +95,7 @@ function Software() {
 
       <p className="text-xl mb-6">
         While tracing the formation of P(3HB-o-4HB) via the butanoate pathway of
-        chassis <em>Cupriavidus necator</em> H16, there were various time-consuming
+        chassis <em>Cupriavidus necator H16</em> , there were various time-consuming
         hurdles that hindered the efficiency of the project such as:
       </p>
 
@@ -115,8 +115,7 @@ function Software() {
 
       <p className="text-xl mb-6">
         Although existing software partially addresses these challenges, most are
-        strain-specific (e.g., <em>E. coli</em>) and lack gene essentiality and
-        pathway competency considerations (Choudhury et al., 2024).
+        strain-specific (e.g., <em>Escherichia. coli</em>). They lack gene essentiality and do not consider pathway competency. (Choudhury et al., 2024). 
       </p>
 
       <p className="text-xl">
@@ -132,19 +131,18 @@ function Software() {
       <div className="h-[2px] bg-black/30 mb-8" />
 
       <ul className="list-disc pl-6 space-y-4 text-xl">
-        <li><strong>Host organism:</strong> <em>Cupriavidus necator</em> H16</li>
+        <li><strong>Host organism:</strong> The strain of bacteria used for the job such as in this case <em>Cupriavidus necator  H16</em>.
         <li><strong>Load:</strong> Plasmid size (kb)</li>
-        <li><strong>Gene of interest:</strong> Target gene for modification</li>
-        <li><strong>Nature of perturbation:</strong> Knockout or overexpression</li>
+        <li><strong>Gene of interest:</strong> The gene that is undergoing modification.</li>
+        <li><strong>Nature of perturbation:</strong> Modification to be applied such as knockout or overexpression.</li>
         <li><strong>Target pathway:</strong> Native metabolic pathway</li>
-        <li><strong>Competing pathways:</strong> Connected metabolic routes</li>
-        <li><strong>Substrate:</strong> Starting compound</li>
-        <li><strong>Product:</strong> Final affected compound</li>
+        <li><strong>Competing pathways:</strong> Other pathways that are connected to the substrate or intermediary metabolites</li>
+        <li><strong>Substrate:</strong> The starting compound from which the mapping begins</li>
+        <li><strong>Product:</strong> Compound of interest that is finally being affected by the perturbation.</li>
         <li><strong>Nutrient medium</strong></li>
         <li><strong>Oxygen condition</strong></li>
         <li>
-          <strong>Objective mode:</strong> Guides optimization among multiple
-          possible outcomes
+          <strong>Objective mode:</strong> Helps the model pinpoint a specific type of outcomes since in this type of computations there are large number of possibilities.
         </li>
       </ul>
     </section>
@@ -192,17 +190,16 @@ function Software() {
 
       <ul className="list-disc pl-6 space-y-4 text-xl">
         <li>
-          <strong>Graph Neural Networks:</strong> Model pathway topology and
-          propagate perturbation effects across the metabolic network (Hasibi et
-          al., 2024).
+          <strong>Graph Neural Networks:</strong> Captures the topology of metabolic pathways by converting them into graphs in which each node represents reactions that are connected by edges that represent a particular shared metabolite. 
+          Hence this allows the model to trace any ripple effect that propagates through the entire network for a specific perturbation. (Hasibi et al., 2024).
         </li>
         <li>
-          <strong>Variational Autoencoders:</strong> Learn probabilistic latent
-          spaces to predict flux distributions (Choudhury et al., 2024).
+          <strong>Variational Autoencoders:</strong>Generative model that learns a smooth, probabilistic latent space, allowing it not only to compress and reconstruct data but 
+          also to generate entirely new, realistic samples. This helps predicting and analysing flux distributions across the pathway. (Choudhury et al., 2024)
         </li>
         <li>
-          <strong>Reinforcement Learning Agent:</strong> Optimizes flux allocation
-          under competing metabolic demands (Espinel-Ríos et al., 2025).
+          <strong>Reinforcement Learning Agent (RLA):</strong>  Optimizes flux allocation when multiple metabolic pathways compete for the same substrate. By learning optimal trade-offs through trial-and-error in simulated environments. 
+          Current flux balance analysis algorithms are modelled to perform with a particular objective. (Espinel-Ríos et al., 2025)
         </li>
       </ul>
     </section>
@@ -214,15 +211,16 @@ function Software() {
       <div className="h-[2px] bg-black/30 mb-8" />
 
       <p className="text-xl mb-6">
-        The model has applications in both academic research and industry.
+        The given model can have a wide range of applications from an academic and research application to an industrial application
       </p>
 
       <ul className="list-disc pl-6 space-y-4 text-xl">
-        <li>Supports hypothesis generation and research planning.</li>
-        <li>Optimizes genetic engineering workflows.</li>
+        <li>he model can prove to be a powerful and insightful tool in research 
+          and hypothesis generation and helping them anticipate the effects of 
+          all modifications that they could plan and apply to make educated decisions.</li>
+        <li>Speed up and optimise genetic engineering processes by avoiding evitable mistakes.</li>
         <li>
-          Simulates pHAC gene knockout effects in the butanoate pathway of
-          <em> Cupriavidus necator</em> H16.
+          The model is capable of simulate the effects of knocking out pHAC gene in the butanoate pathway of <em>Cupriavidus necator H16</em>.
         </li>
       </ul>
     </section>
@@ -234,10 +232,10 @@ function Software() {
       <div className="h-[2px] bg-black/30 mb-8" />
 
       <ul className="list-disc pl-6 space-y-4 text-xl">
-        <li>Expansion to a broader organism library.</li>
-        <li>Integration of laboratory-specific parameters.</li>
+        <li>The model's organism library can be expanded to various other bacteria.</li>
+        <li>Can be integrated into real life research environments by integrating more laboratory specific parameters.</li>
         <li>
-          Transfer learning from model organisms to understudied species.
+          ransfer learning from model organisms could enable accurate flux predictions for understudied species with minimal experimental data.
         </li>
       </ul>
     </section>
