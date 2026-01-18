@@ -11,7 +11,7 @@ function LabSafety() {
     ));
 
   const navLinks = [
-    { id: "LabSafety-responsibility", label: "LabSafety and Responsibility" },
+    { id: "Safety-responsibility", label: "LabSafety and Responsibility" },
     { id: "identifying-risks", label: "Identifying Project Risks" },
     { id: "handling-risks", label: "Handling These Risks" },
     { id: "lab-environment", label: "Laboratory Environment" },
@@ -57,8 +57,8 @@ function LabSafety() {
               <h2 className="text-5xl font-semibold mb-4 text-black">LabSafety and Responsibility</h2>
               <div className="h-[2px] bg-black/20 mb-8" />
               <p className="text-xl mb-6">
-                Our laboratory team values the LabSafety of laboratory personnel, the surrounding environment, and the greater community. 
-                All experimental plans developed for this project are constructed to be compliant with institutional bioLabSafety guidelines and corresponding national laws related to bioLabSafety. 
+                Our laboratory team values the safety of laboratory personnel, the surrounding environment, and the greater community. 
+                All experimental plans developed for this project are constructed to be compliant with institutional safety guidelines and corresponding national laws related to bioLabSafety. 
                 Because this project involves wet laboratory techniques, we emphasize the careful handling of biological materials, chemical reagents, and laboratory processes in order to support responsible and transparent research practices under the guidance of our supervising faculty.
               </p>
             </section>
@@ -68,7 +68,7 @@ function LabSafety() {
               <h2 className="text-5xl font-semibold mb-4 text-black">Identifying Project Risks</h2>
               <div className="h-[2px] bg-black/20 mb-8" />
               <p className="text-xl mb-6">
-                To assess potential risks associated with the project, the team reviewed bioLabSafety documentation and consulted academic advisors experienced in microbial and molecular biology research. 
+                To assess potential risks associated with the project, the team reviewed safety documentation and consulted academic advisors experienced in microbial and molecular biology research. 
                 Based on these discussions, it was concluded that the risks associated with the proposed work are minimal, provided that standard bioLabSafety practices are strictly followed.
               </p>
               <p className="text-xl mb-6">
@@ -98,7 +98,7 @@ function LabSafety() {
               <div id="lab-environment" className="mb-12 scroll-mt-32">
                 <h3 className="text-3xl font-bold mb-4">Laboratory Environment</h3>
                 <p className="text-xl mb-6">
-                  All experimental procedures are planned to be conducted in a BioLabSafety Level 1 (BSL-1) laboratory environment, which is appropriate for work involving non-pathogenic microorganisms such as <i className="italic">E. coli</i> S17-1 and <i className="italic">Cupriavidus necator</i> H16.
+                  All experimental procedures are planned to be conducted in a Bio Safety Level 1 (BSL-1) laboratory environment, which is appropriate for work involving non-pathogenic microorganisms such as <i className="italic">E. coli</i> S17-1 and <i className="italic">Cupriavidus necator</i> H16.
                 </p>
                 <p className="text-xl mb-6">
                   At present, wet laboratory experimentation remains in the planning phase. 
@@ -107,9 +107,9 @@ function LabSafety() {
                 </p>
               </div>
 
-              <div id="biological-LabSafety" className="mb-12 scroll-mt-32">
+              <div id="biological-Safety" className="mb-12 scroll-mt-32">
                 <h3 className="text-3xl font-bold mb-4">Biological LabSafety</h3>
-                <p className="text-xl mb-4 font-bold underline">The biological systems planned for use in this project are limited to non-pathogenic bacterial strains:</p>
+                <p className="text-xl mb-4 font-bold ">The biological systems planned for use in this project are limited to non-pathogenic bacterial strains:</p>
                 <ul className="list-disc ml-10 text-xl mb-6 space-y-4">
                   <li>
                     <span className="font-bold italic">Escherichia coli</span> S17-1 (Risk Group 1)<br />
@@ -128,8 +128,8 @@ function LabSafety() {
               </div>
 
               <div id="LabSafety-training" className="mb-12 scroll-mt-32">
-                <h3 className="text-3xl font-bold mb-4">Laboratory and LabSafety Training</h3>
-                <p className="text-xl mb-4 font-bold underline">Team members have received foundational training in laboratory LabSafety and bioLabSafety practices, including:</p>
+                <h3 className="text-3xl font-bold mb-4">Laboratory and safety Training</h3>
+                <p className="text-xl mb-4 font-bold ">Team members have received foundational training in laboratory LabSafety and bioLabSafety practices, including:</p>
                 <ul className="list-disc ml-10 text-xl mb-6 space-y-2">
                   <li>Aseptic techniques for handling microbial cultures</li>
                   <li>Understanding of bioLabSafety levels</li>
@@ -142,11 +142,11 @@ function LabSafety() {
               </div>
 
               <div id="chemical-LabSafety" className="mb-12 scroll-mt-32">
-                <h3 className="text-3xl font-bold mb-4">Chemical LabSafety</h3>
+                <h3 className="text-3xl font-bold mb-4">Chemical Safety</h3>
                 <p className="text-xl mb-6">
                   The chemicals planned for use in this project include laboratory solvents, antibiotics, inducers, and reagents commonly used in molecular biology and polymer analysis.
                 </p>
-                <p className="text-xl mb-4 font-bold underline">During future wet laboratory experimentation:</p>
+                <p className="text-xl mb-4 font-bold ">During future wet laboratory experimentation:</p>
                 <ul className="list-disc ml-10 text-xl mb-6 space-y-2">
                   <li>Flammable solvents will be handled inside chemical fume hoods and kept away from ignition sources</li>
                   <li>Disposable gloves will be worn when handling antibiotics and chemical reagents</li>
@@ -162,7 +162,7 @@ function LabSafety() {
             <section id="regulatory-compliance" className="scroll-mt-32">
               <h2 className="text-5xl font-semibold mb-4 text-black">Regulatory Compliance</h2>
               <div className="h-[2px] bg-black/20 mb-8" />
-              <p className="text-xl mb-4 font-bold underline">The design and planning of this project follow national bioLabSafety regulations, including:</p>
+              <p className="text-xl mb-4 font-bold ">The design and planning of this project follow national bio safety regulations, including:</p>
               <ul className="list-disc ml-10 text-xl mb-6 space-y-4">
                 <li>
                   <span className="font-bold underline">The Environment (Protection) Act, 1986</span>, which governs the handling and disposal of hazardous substances.
