@@ -6,6 +6,11 @@ import hp5 from "../../assets/hp5.png";
 import hp6 from "../../assets/hp6.png";
 import hp7 from "../../assets/hp7.png";
 import hp8 from "../../assets/hp8.png";
+import sur1 from "../../assets/sur1.png";
+import sur2 from "../../assets/sur2.png";
+import sur3 from "../../assets/sur3.png";
+import sur4 from "../../assets/sur4.png";
+import sur5 from "../../assets/sur5.png";
 
 function HumanPractices() {
   const renderTitleHover = (text: string) =>
@@ -159,6 +164,34 @@ function HumanPractices() {
     ))}
   </div>
 </section>
+
+ <h2 className="text-6xl font-semibold mb-4">
+    Survey conducted to understand public perception on plastics
+  </h2>
+  <div className="h-[2px] bg-black/30 mb-8" />
+
+  <p className="text-xl mb-10">
+    To understand potential acceptance and perception of biodegradable plastics, we conducted a public survey with 190 respondents across diverse age groups and educational backgrounds. The aim of this survey was to evaluate public readiness and application relevance for a microbially produced biopolymer being developed as part of our project.
+  </p>
+
+  {/* SPONSOR TILES */}
+  <div className="grid grid-cols-2 md:grid-cols-3 gap-8">
+    {[sur1,sur2,sur3,sur4,sur5].map((img, index) => (
+      <div
+        key={index}
+        className="bg-white rounded-xl shadow-md p-6 flex items-center justify-center hover:shadow-xl transition-shadow duration-300"
+      >
+        <img
+          src={img}
+          alt={`Survey ${index + 1}`}
+          className="max-h-[120px] w-auto object-contain"
+        />
+      </div>
+    ))}
+  </div>
+  <p className="text-xl mt-10 mb-10">
+    Our survey conducted across multiple age groups shows that majority of the general population is aware of the drawbacks caused due to the extensive use of one time plastics. They are also aware of the other options present out there i.e. biodegradable plastics, and have shown concern towards the detrimental impacts they pose to the environment. Considering that people are willing to pay a higher price for everyday use items shows that our biologically sustainable alternative holds importance.
+   </p>
 
           </div>
         </main>
