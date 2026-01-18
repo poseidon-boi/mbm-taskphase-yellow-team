@@ -21,8 +21,8 @@ function Attributions() {
     { id: "fiona", name: "9. Fiona" },
     { id: "reeya", name: "10. Reeya" },
     { id: "dheekshidhaa", name: "11. Dheekshidhaa" },
-    {id : "aaryan", name: "12. Aaryan"}
-    {id: "johanna", name:"13. Johanna"}
+    {id : "aaryan", name: "12. Aaryan"},
+    {id: "johanna", name:"13. Johanna"},
   ];
 
   return (
