@@ -82,10 +82,10 @@ export default function Model() {
               </p>
 
               <ul className="list-disc pl-6 space-y-2 text-xl mb-4">
-                <li>Optogenetic regulation of gene expression,</li>
-                <li>Light-dependent metabolic flux into the 4HB pathway,</li>
-                <li>Constitutive production of 3HB,</li>
-                <li>Native polymerization by PHA synthase (PhaC).</li>
+                <li>Optogenetic regulation of gene expression</li>
+                <li>Light-dependent metabolic flux into the 4HB pathway</li>
+                <li>Constitutive production of 3HB</li>
+                <li>Native polymerization by PHA synthase (PhaC)</li>
               </ul>
 
               <p className="text-xl">
@@ -98,7 +98,7 @@ export default function Model() {
             {/* ===== 2. SCOPE ===== */}
             <section id="Scope" className="mb-12 scroll-mt-32">
               <h2 className="text-4xl font-semibold mb-4">
-                2. Scope of the Modeling
+                2. Scope of the Modelling
               </h2>
 
               <p className="text-xl mb-4">
@@ -114,7 +114,7 @@ export default function Model() {
               </p>
 
               <p className="text-xl">
-                The biological justification for omitting chain-level modeling
+                The biological justification for omitting chain-level modelling
                 is supported by extensive literature demonstrating that PHA
                 copolymer composition is primarily determined by the relative
                 intracellular availability of monomer precursors rather than
@@ -314,7 +314,7 @@ export default function Model() {
     <tbody className="bg-white">
       <tr className="hover:bg-[#FEFAE0]/70">
         <td className="border border-black px-6 py-3 font-mono">
-          v<sup>light</sup><sub>4HB</sub>
+          v<sub>light</sub><sub>4HB</sub>
         </td>
         <td className="border border-black px-6 py-3">
           Light-dependent 4HB formation rate
@@ -381,7 +381,7 @@ export default function Model() {
     <tbody className="bg-white">
       <tr className="hover:bg-[#FEFAE0]/70">
         <td className="border border-black px-6 py-3 font-mono">
-          v<sup>const</sup><sub>3HB</sub>
+          v<sub>const</sub><sub>3HB</sub>
         </td>
         <td className="border border-black px-6 py-3">
           Constant 3HB synthesis rate
@@ -429,7 +429,7 @@ export default function Model() {
   </p>
 
   <p className="text-xl mb-6">
-    Polymer accumulation is modeled as:
+    Polymer accumulation is modelled as:
   </p>
 
  <div className="text-xl my-6">
