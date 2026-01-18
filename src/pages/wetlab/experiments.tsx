@@ -16,7 +16,7 @@ function Experiments() {
       {/* ===== TITLE ROW ===== */}
       <div className="pt-32 pb-24 flex justify-center">
         <h1 className="text-6xl font-bold">
-          {renderTitleHover("Project Protocol")}
+          {renderTitleHover("Experiments")}
         </h1>
       </div>
 

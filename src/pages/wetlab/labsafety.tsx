@@ -28,7 +28,7 @@ function LabSafety() {
       {/* ===== TITLE ROW ===== */}
       <div className="pt-32 pb-24 flex justify-center">
         <h1 className="text-6xl font-bold">
-          {renderTitleHover("LabSafety and Responsibility")}
+          {renderTitleHover("Lab Safety")}
         </h1>
       </div>
 
