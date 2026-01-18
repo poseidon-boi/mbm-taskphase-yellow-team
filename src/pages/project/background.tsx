@@ -1,3 +1,5 @@
+import gene from "../../assets/gene.jpeg"
+
 function Background() {
   const renderTitleHover = (text: string) =>
     text.split("").map((char, i) => (
@@ -122,6 +124,7 @@ function Background() {
 
  
               </p>
+              <img src={gene}></img>
             </section>
 
             {/* ===== REFERENCES ===== */}
