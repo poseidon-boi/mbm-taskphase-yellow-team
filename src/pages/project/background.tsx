@@ -49,27 +49,11 @@ function Background() {
             {/* ===== OVERVIEW ===== */}
             <section id="overview" className="mb-14 scroll-mt-32">
               <p className="text-xl mb-6">
-                Our work is inspired by the increasing demand for biomaterials
-                that could be not only useful in advanced life science
-                applications but also eco-friendly. Current biomaterials made of
-                synthetic polymer have poor biodegradation and biocompatibility,
-                posing long-term challenges. To meet these challenges, we
-                highlight polyhydroxyalkanoates (PHAs), biodegradable biomaterials
-                that naturally occur in the bacterial{" "}
-                <em>Cupriavidus necator</em>. PHAs have great applications in
-                future biomaterials due to their excellent biocompatibility,
-                renewability, and tailorable characteristics.
+                Our work is inspired by the increasing demand for biomaterials that are not only useful in advanced life science applications but is also eco-friendly. Current biomaterials made of synthetic polymer have poor biodegradation and biocompatibility, posing long-term challenges. To meet these challenges, we highlight polyhydroxyalkanoates (PHAs), biodegradable biomaterials that are naturally produced in the Cupriavidus necator. PHAs have great potential for future biomaterials due to their excellent biocompatibility, renewability, and tailorable properties. 
               </p>
 
               <p className="text-xl">
-                Of all these, however, P(3HB-co-4HB) is unique due to its
-                adjustable mechanical and degradative characteristics. The
-                flexibility, rigidity, and degradability of this material can be
-                adjusted depending on the percentage of its monomers. The
-                objectives of this project are focused on attempting to
-                biologically engineer a degradative <em>C. necator</em> with a
-                goal of using them for applications related to tissue engineering
-                because of their degradability.
+                Of all these, P(3HB-co-4HB) is unique, as the mechanical and physical properties of this copolymer can be adjusted depending on the percentage of 4HB monomers present in the polymer chain. The objective of this project is to biologically engineer C. necator to do this by introducing a light-sensitive inducible promoter. 
               </p>
             </section>
 
@@ -81,9 +65,9 @@ function Background() {
               <div className="h-[2px] bg-black/30 mb-6" />
 
               <p className="text-xl mb-6">
-                The reason <em>C. necator</em> was chosen as the chassis organism
+                The reason <em>Cupriavidus necator</em> was chosen as the chassis organism
                 for the project is due to the efficient metabolism of substrates
-                towards intracellular polymer accumulation. <em>C. necator</em>,
+                towards intracellular polymer accumulation. <em>Cupriavidus necator</em>,
                 therefore, is an excellent host suitable for biological
                 compatibility and controlled flux towards 4HB-CoA with the
                 objective of producing the target copolymer
@@ -92,11 +76,10 @@ function Background() {
 
               <p className="text-xl">
                 <em>Cupriavidus necator</em> has a well-established ability to
-                produce polyhydroxyalkanoates (PHA) and its established
-                suitability for the production of PHA copolymers. The organism
+                produce polyhydroxyalkanoates(PHA) and the PHA copolymers. The organism
                 naturally produces poly(3-hydroxybutyrate) and is amenable to the
                 production of similar monomers, such as 4-hydroxybutyrate, when
-                the appropriate precursors are available.
+                the appropriate precursors and growth conditions are available.
               </p>
             </section>
 
@@ -111,46 +94,33 @@ function Background() {
                 In <em>Cupriavidus necator</em>, the 4-hydroxybutyryl-CoA
                 (4HB-CoA) is an intermediate linked to the metabolism of butyrate
                 and its activation as a precursor to the incorporation of 4HB
-                units into the Polyhydroxyalkanoates. The metabolic transformation
+                units into the polyhydroxyalkanoates. The metabolic transformation
                 of succinate semialdehyde to 4HB-CoA is carried out by the
-                two-step enzymatic action of NAD-dependent
+                two-step enzymatic action of NAD-dependent succinate semialdehyde dehydrogenase, followed by activation of 4-hydroxybutyrate to 4HB-CoA by a CoA transferase (or CoA ligase). 
               </p>
 
               <p className="text-xl mb-6">
-                In the choice of the regulating reactions for the pathways, we
-                picked the initial enzymatic reaction catalyzed by the gene{" "}
-                <em>gbd</em>, which phosphorylates SSA to
-                4-hydroxybutyrate. This was informed by the central importance of
-                SSA in metabolism. SSA is a highly reactive and dangerous compound
-                that is carefully controlled in bacterial cells. In the case of
-                the bacterium <em>C. necator</em>, SSA is a precursor in various
-                biosynthetic pathways, such as the tricarboxylic acid cycle, the
-                vitamin B₆ biosynthesis cycle, and the arg-pro cycle.
+                In the choice of the regulating reactions for the pathways, 
+                we picked the initial enzymatic reaction catalyzed by the gene gbd,
+                which phosphorylates SSA to 4-hydroxybutyrate. This was informed by the central importance of SSA in metabolism. 
+                SSA is a highly reactive and dangerous compound that is carefully controlled in bacterial cells.
+                In the case of the bacterium C. necator, SSA is a precursor in various biosynthetic pathways, 
+                such as the tricarboxylic acid cycle, the vitamin B₆ biosynthesis cycle, and the arg-pro cycle. 
+                
               </p>
 
               <p className="text-xl mb-6">
-                Owing to the danger posed by the intracellular accumulation of
-                SSA, bacterial cells work to redirect this compound into
-                different metabolic pathways. Inhibition of the downstream
-                enzymes, with the allowance of SSA accumulation, would pose a
-                substantial metabolic burden.
+                Owing to the danger posed by the intracellular accumulation of SSA, bacterial cells work to redirect this compound into different metabolic pathways. Inhibition of the downstream enzymes, with the allowance of SSA accumulation, would pose a substantial metabolic burden. 
               </p>
 
               <p className="text-xl mb-6">
-                By contrast, the intermediate 4-hydroxybutyrate is a relatively
-                pathway-specific metabolite, which does not enter any other
-                major central metabolic pathways directly. Based on this
-                consideration, the downstream enzyme
-                4-hydroxybutyrate-CoA transferase has been regarded as a riskier
-                target because of the possibility of 4-hydroxybutyrate
-                accumulation with no metabolic outlets.
+                By contrast, the intermediate 4-hydroxybutyrate is a relatively pathway-specific metabolite, which does not enter any other major central metabolic pathways directly. Based on this consideration, the downstream enzyme 4-hydroxybutyrate-CoA transferase has been regarded as a riskier target because of the possibility of 4-hydroxybutyrate accumulation with no metabolic outlets. 
               </p>
 
               <p className="text-xl">
-                Based on these considerations, the approach of silencing{" "}
-                <em>gbd</em> was selected as a safer and more controlled strategy
-                for regulating the carbon flux into the 4HB-CoA pool while
-                minimizing unintended disruptions to central metabolism.
+                Based on these considerations, the approach of silencing gbd was selected as a safer and more controlled strategy for regulating the carbon flux into the 4HB-CoA pool while minimizing unintended disruptions to central metabolism. 
+
+ 
               </p>
             </section>
 
