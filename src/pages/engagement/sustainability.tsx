@@ -15,7 +15,7 @@ function Sustainability() {
     ));
 
   return (
-    <div className="w-full bg-[#1F2A13] text-white">
+    <div className="w-full text-white">
       {/* ===== TITLE ROW ===== */}
       <div className="pt-32 pb-24 flex justify-center">
         <h1 className="text-6xl font-bold">
@@ -27,7 +27,7 @@ function Sustainability() {
       <div className="flex w-full min-h-screen px-10 gap-5">
         {/* LEFT SIDEBAR */}
         <aside className="w-[10%] px-6 sticky mt-5 top-32 self-start">
-          <nav className="flex flex-col gap-7 text-lg">
+          <nav className="flex flex-col gap-7 p-3 rounded text-lg bg-[#1F2A13]">
             <a
               href="#SDG Goals"
               className="group relative w-fit text-white/80 hover:text-white transition-colors"

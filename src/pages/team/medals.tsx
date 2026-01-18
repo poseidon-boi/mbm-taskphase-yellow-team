@@ -36,7 +36,7 @@ function Medals() {
   );
 
   return (
-    <div className="w-full min-h-screen bg-[#1F2A13] text-white">
+    <div className="w-full min-h-screen text-white">
       {/* ===== TITLE ===== */}
       <div className="pt-32 pb-24 mb-15 flex justify-center">
         <h1 className="text-6xl font-bold">

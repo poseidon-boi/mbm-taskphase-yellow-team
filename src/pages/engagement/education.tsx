@@ -277,7 +277,12 @@ function Education() {
                 case study, teams evaluated scientific feasibility, economic
                 impact, ethical concerns, and societal consequences.
               </p>
-
+              <p className="mb-4 text-lg">
+                Teams negotiated and proposed regulatory decisions, culminating
+                in a consensus policy developed through structured discussion.
+                Facilitators ensured scientific accuracy while encouraging
+                independent reasoning.
+              </p>
               <p className="font-bold text-2xl">Impact</p>
               <p className="text-lg">
                 The simulation helped students appreciate the ethical, social,

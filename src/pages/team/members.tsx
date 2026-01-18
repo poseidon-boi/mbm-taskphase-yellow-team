@@ -125,7 +125,7 @@ function Members() {
   };
 
   return (
-    <section className="bg-[#1F2A13] min-h-screen pb-32 px-16 relative">
+    <section className="min-h-screen pb-32 px-16 relative">
       {/* Header fade buffer */}
       <div className="absolute top-0 left-0 w-full h-32 bg-gradient-to-b from-[#1F2A13] to-transparent pointer-events-none z-40" />
 

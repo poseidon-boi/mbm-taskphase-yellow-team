@@ -10,7 +10,7 @@ function Description() {
     ));
 
   return (
-    <div className="w-full bg-[#1F2A13] text-white">
+    <div className="w-full text-white">
       {/* ===== TITLE ROW (FULL WIDTH) ===== */}
       <div className="pt-32 pb-24 flex justify-center">
         <h1 className="text-6xl font-bold">
