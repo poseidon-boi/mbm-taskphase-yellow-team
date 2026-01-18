@@ -20,7 +20,8 @@ function Attributions() {
     { id: "nivedita", name: "8. Nivedita" },
     { id: "fiona", name: "9. Fiona" },
     { id: "reeya", name: "10. Reeya" },
-    { id: "dheekshidhaa", name: "11. Dheekshidhaa.A" },
+    { id: "dheekshidhaa", name: "11. Aaryan" },
+    {id : "aaryan", name: "12. Aaryan"}
   ];
 
   return (
@@ -223,9 +224,9 @@ function Attributions() {
               </div>
             </section>
 
-            {/* 11. Dheekshidhaa.A */}
+            {/* 11. Dheekshidhaa */}
             <section id="dheekshidhaa" className="scroll-mt-32 pb-10">
-              <h2 className="text-4xl font-bold mb-4 text-black">11. Dheekshidhaa.A:</h2>
+              <h2 className="text-4xl font-bold mb-4 text-black">11. Aaryan:</h2>
               <div className="h-[2px] bg-black/20 mb-6" />
               <ul className="list-disc ml-8 text-xl space-y-2">
                 <li>Ideation of Rapid, low-cost on-site mycotoxin test for spices & areca nut and anthracnose disease of beans from the agriculture village.</li>
@@ -237,6 +238,21 @@ function Attributions() {
                 <li>Finding different organisms that produce this copolymer</li>
                 <li>Met and consulted with Prof. Gautham Thakur and Prof. Gautham Jeppu to gain knowledge about the copolymer</li>
                 <li>Protocols of wet lab, DBTL cycle</li>
+              </ul>
+            </section>
+
+            {/* 11. Aaryan */}
+            <section id="aaryan" className="scroll-mt-32 pb-10">
+              <h2 className="text-4xl font-bold mb-4 text-black">11. Aaryan:</h2>
+              <div className="h-[2px] bg-black/20 mb-6" />
+              <ul className="list-disc ml-8 text-xl space-y-2">
+                <li>Contacted researchers and companies to acquire the bacteria strains needed</li>
+                <li>Worked on the TAGs project (specifically extracellularisation).</li>
+                <li>Ideation of bioChar (filtering wastewater).</li>
+                <li>Helped with Constructing optogenetic system for final project.</li>
+                <li>Helped on Papaya MealyBug.</li>
+                <li>Space projects conceptual work (gamma-PGA, clinostats, lunar dust)</li>
+                <li>Applications, properties, general background of the Co-polymer.</li>
               </ul>
             </section>
 
