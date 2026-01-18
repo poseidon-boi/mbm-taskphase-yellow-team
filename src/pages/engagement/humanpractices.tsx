@@ -119,7 +119,7 @@ function HumanPractices() {
               <div className="flex gap-10 items-start">
                 <div className="flex-1">
                     <p className="text-xl mb-6">
-                We spoke to Mr. Divyesh Dadhaniya from Deltora Biopolymers Private Limited to understand the production, application of Biopolymers in the industry, nd who our customers could be.
+                We spoke to Mr. Divyesh Dadhaniya from Deltora Biopolymers Private Limited to understand the production, application of Biopolymers in the industry, and who our customers could be.
               </p>
               <p className="text-xl mb-6">
                 He explained that Deltora primarily focuses on the production of raw biopolymer materials and compounding, rather than manufacturing finished products. He highlighted that these compounded biopolymers are commonly used in injection molded products and cutlery, where biodegradable materials need to meet both functional and processing requirements. However he did not disclose the companies that purchase these biopolymer raw materials.</p>
