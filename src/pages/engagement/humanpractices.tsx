@@ -1,3 +1,12 @@
+import hp1 from "../../assets/hp1.png";
+import hp2 from "../../assets/hp2.png";
+import hp3 from "../../assets/hp3.png";
+import hp4 from "../../assets/hp4.png";
+import hp5 from "../../assets/hp5.png";
+import hp6 from "../../assets/hp6.png";
+import hp7 from "../../assets/hp7.png";
+import hp8 from "../../assets/hp8.png";
+
 function HumanPractices() {
   const renderTitleHover = (text: string) =>
     text.split("").map((char, i) => (
@@ -38,17 +47,10 @@ function HumanPractices() {
               <span className="absolute -bottom-1 left-0 w-0 h-[2px] bg-[#dda15e] transition-all duration-300 group-hover:w-full" />
             </a>
             <a
-              href="#Limitations of Current Production Stratergies"
+              href="#Potential Sponsers"
               className="group relative w-fit text-white/80 hover:text-white"
             >
-              Limitations of Current Production Stratergies
-              <span className="absolute -bottom-1 left-0 w-0 h-[2px] bg-[#dda15e] transition-all duration-300 group-hover:w-full" />
-            </a>
-            <a
-              href="#Importance of Block Copolymer Structure"
-              className="group relative w-fit text-white/80 hover:text-white"
-            >
-              Importance of Block Copolymer Structure
+             Potential Sponsers
               <span className="absolute -bottom-1 left-0 w-0 h-[2px] bg-[#dda15e] transition-all duration-300 group-hover:w-full" />
             </a>
           </nav>
@@ -67,20 +69,34 @@ function HumanPractices() {
                 Rigel Bioenviron Solutions Private Limited
               </h2>
               <div className="h-[2px] bg-black/30 mb-8" />
-              <p className="text-xl mb-6">
-                As part of our Human Practices activities, we contacted Rigel Bioenviron Solutions Pvt. Ltd. to understand the current state of polyhydroxyalkanoates (PHAs) in India. We spoke to Dr. Sanchita Mukherjee, who provided important insights about production capabilities and application pathways for PHAs in the country. Dr. Mukherjee explained that PHAs are not produced at a large commercial scale in India. While PHAs are being made domestically, this production is limited and does not yet support widespread manufacturing for plastic applications. Rigel Bioenviron Solutions produces PHAs from industrial waste streams, showing a sustainable approach; however, these materials are not sold as mass-use plastics. Instead, the company primarily supplies PHAs to the food industry for niche, high-value uses. When we asked about potential end users of PHAs, Dr. Mukherjee mentioned the following,
-
+              <div className="flex gap-10 items-start ">
+                <div className="flex-1"><p className="text-xl mb-6">
+                As part of our Human Practices activities, we contacted Rigel Bioenviron Solutions Pvt. Ltd. to understand the current state of polyhydroxyalkanoates (PHAs) in India. We spoke to Dr. Sanchita Mukherjee, who provided important insights about production capabilities and application pathways for PHAs in the country. Dr. Mukherjee explained that PHAs are not produced at a large commercial scale in India. While PHAs are being made domestically, this production is limited and does not yet support widespread manufacturing for plastic applications. Rigel Bioenviron Solutions produces PHAs from industrial waste streams, showing a sustainable approach; however, these materials are not sold as mass-use plastics. Instead, the company primarily supplies PHAs to the food industry for niche, high-value uses. When we asked about potential end users of PHAs, Dr. Mukherjee mentioned the following:
               </p>
              
-              <ul>
-                <li>plastic manufacturers looking for sustainable material alternatives</li>
-                <li>food and ice-cream producers for packaging and food-contact needs</li>
-                <li>medical applications like biodegradable sutures, 
- food packaging sector</li>
-              </ul>
+              <ol className="list-disc ml-6 space-y-2 text-xl">
+  <li>
+    Plastic manufacturers seeking sustainable material alternatives
+  </li>
+  <li>
+    Food and ice-cream producers for packaging and food-contact applications
+  </li>
+  <li>
+    Medical applications such as biodegradable sutures and food packaging
+  </li>
+</ol>
+
               <p className="text-xl mb-6">
                 where biodegradability and safety are crucial. This conversation uncovers a gap between the proven technical feasibility of PHAs and their widespread commercial adoption in India. It emphasized the importance of our project's goal to develop a copolymer with better applicability for sustainable plastic alternatives.
-              </p>
+              </p></div>
+                <div className="w-[320px] flex-shrink-0">
+    <img
+      src={hp1}
+      alt="Discussion with Rigel Bioenviron Solutions"
+      className="w-full h-auto object-contain rounded-lg shadow-lg"
+    />
+  </div>
+              </div>
             </section>
 
             {/* SECTION: Deltora Biopolymers Private Limited */}
@@ -95,104 +111,55 @@ function HumanPractices() {
               </h2>
               <div className="h-[2px] bg-black/30 mb-8" />
 
-              <p className="text-xl mb-6">
+              <div className="flex gap-10 items-start">
+                <div className="flex-1">
+                    <p className="text-xl mb-6">
                 We spoke to Mr. Divyesh Dadhaniya from Deltora Biopolymers Private Limited to understand the production, application of Biopolymers in the industry, nd who our customers could be.
               </p>
               <p className="text-xl mb-6">
                 He explained that Deltora primarily focuses on the production of raw biopolymer materials and compounding, rather than manufacturing finished products. He highlighted that these compounded biopolymers are commonly used in injection molded products and cutlery, where biodegradable materials need to meet both functional and processing requirements. However he did not disclose the companies that purchase these biopolymer raw materials.</p>
-            </section>
+            </div>
+                <div>
+                    <img
+      src={hp2}
+      alt="Discussion with  Deltora Biopolymers Private Limited"
+      className="w-full h-auto object-contain rounded-lg shadow-lg"
+    />
+                </div>
+                </div></section>
 
-            {/* SECTION: Limitations of Current Production Stratergies */}
+            {/* SECTION: other companis */}
             <section className="mb-12">
-              <div
-                id="Limitations of Current Production Stratergies"
-                className="scroll-mt-32"
-              />
-              <h2 className="text-6xl font-semibold mb-4">
-                Limitations of Current Production Stratergies
-              </h2>
-              <div className="h-[2px] bg-black/30 mb-8" />
-              <p className="text-xl mb-6">
-                Despite its potential, the production of P(3HB-co-4HB) remains
-                constrained by fundamental limitations in existing biosynthetic
-                methods. <em>Cupriavidus necator</em> H16 is widely used for the
-                high-yield production of PHAs through its native metabolic
-                pathways; however, current approaches do not allow precise
-                control over the micro- and macro-structural properties of the
-                polymer.
-              </p>
-              <p className="text-xl mb-6">
-                While the overall 4HB content of P(3HB-co-4HB) can be modulated
-                by supplying different carbon sources, like 4-hydroxybutyric
-                acid, 4-chlorobutyric acid, 1,4-butanediol and γ-butyrolactone,
-                to the microbial chassis (Kunioka et al., 1989), this strategy
-                only influences monomer composition. It does not permit
-                regulation of the polymer microstructure, specifically the
-                positional distribution of 4HB units along the polymer chain.
-              </p>
-              <p className="text-xl mb-6">
-                This limitation arises from the activity of PHA synthase (PhaC),
-                the key enzyme catalysing the final step of PHA biosynthesis
-                (Zher Neoh et al., 2022). PhaC is a class I synthase that
-                preferentially incorporates short-chain-length monomers and
-                synthesises PHA polymers from coenzyme A thioesters of
-                hydroxyalkanoic acids following removal of the CoA moiety
-                (Assefa et al., 2022). Importantly, PhaC lacks strict
-                monomer-CoA specificity, as evidenced by the natural production
-                of P(3HB-co-4HB) in <em>Cupriavidus necator</em> H16, and
-                therefore incorporates whichever monomer-CoA species is
-                available at a given time (de Macedo et al., 2024).
-              </p>
-              <p className="text-xl mb-6">
-                As a result, 3HB-CoA and 4HB-CoA are randomly incorporated into
-                the growing polymer chain based solely on intracellular
-                availability. Although substrate composition determines
-                precursor abundance and thus overall 4HB content, it does not
-                allow control over monomer sequence distribution. This lack of
-                microstructural control limits the ability to fine-tune material
-                properties for specific applications.
-              </p>
-            </section>
+  <div id="Potential-Sponsors" className="scroll-mt-32" />
 
-            {/* SECTION: Importance of Block Copolymer Structure */}
-            <section className="mb-12">
-              <div
-                id="Importance of Block Copolymer Structure"
-                className="scroll-mt-32"
-              />
-              <h2 className="text-6xl font-semibold mb-4">
-                Importance of Block Copolymer Structure
-              </h2>
-              <div className="h-[2px] bg-black/30 mb-8" />
-              <p className="text-xl mb-6">
-                Apart from monomer composition and molecular weight, the
-                copolymer chain's molecular structure (random vs block) is also
-                crucial for controlling the mechanical and physical properties
-                of PHAs (Mai et al., 2024). Literature states that the monomer
-                sequence of a polymer plays a significant role in determining
-                the mechanical properties of the polymer. The presence of a
-                diverse number of properties using the same monomer components
-                is a substantial advantage of sequence regulation.
-              </p>
-              <p className="text-xl mb-6">
-                In particular, ABA-type block copolymers consisting of hard (A)
-                and soft (B) segments are known to be rigid and/or elastic
-                (Matsumoto, 2024), allowing them to be used for varied purposes
-                that would not have been possible if the copolymer with the same
-                component ratio were randomly polymerised.
-              </p>
-              <p className="text-xl mb-6">
-                Notably, block copolymers of P(3HB-co-4HB) have been reported to
-                exhibit higher yield strength and tensile strength than their
-                random copolymer and blend counterparts. Although differences in
-                microstructure influence elongation at break, block copolymers
-                have demonstrated elongation values exceeding 300%, compared to
-                only 5.9% for PHB (Hu et al., 2011). These findings underscore
-                the importance of achieving sequence-level control over
-                P(3HB-co-4HB) biosynthesis to unlock its full application
-                potential.
-              </p>
-            </section>
+  <h2 className="text-6xl font-semibold mb-4">
+    Potential Indian Sponsors
+  </h2>
+  <div className="h-[2px] bg-black/30 mb-8" />
+
+  <p className="text-xl mb-10">
+    The following organizations have been identified as potential sponsors
+    based on their involvement in biopolymers, sustainability, and
+    biotechnology-driven manufacturing.
+  </p>
+
+  {/* SPONSOR TILES */}
+  <div className="grid grid-cols-2 md:grid-cols-3 gap-8">
+    {[hp3, hp4, hp5, hp6, hp7, hp8].map((img, index) => (
+      <div
+        key={index}
+        className="bg-white rounded-xl shadow-md p-6 flex items-center justify-center hover:shadow-xl transition-shadow duration-300"
+      >
+        <img
+          src={img}
+          alt={`Potential sponsor ${index + 1}`}
+          className="max-h-[120px] w-auto object-contain"
+        />
+      </div>
+    ))}
+  </div>
+</section>
+
           </div>
         </main>
       </div>
@@ -200,4 +167,4 @@ function HumanPractices() {
   );
 }
 
-export default Human Practices;
+export default HumanPractices;
