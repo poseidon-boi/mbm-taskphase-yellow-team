@@ -50,6 +50,7 @@ function Header() {
             >
               <Link to="/wetlab/experiments">Experiments</Link>
               <Link to="/wetlab/notebook">Notebook</Link>
+              <Link to="/wetlab/labsafety">Lab Safety</Link>
             </div>
           </div>
 

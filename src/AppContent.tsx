@@ -17,6 +17,7 @@ import Engineering from "./pages/project/engineering";
 // WET LAB
 import Experiments from "./pages/wetlab/experiments";
 import Notebook from "./pages/wetlab/notebook";
+import LabSafety from "./pages/wetlab/labsafety";
 
 // DRY LAB
 import Model from "./pages/drylab/model";
@@ -116,6 +117,7 @@ export default function AppContent() {
         {/* WET LAB */}
         <Route path="/wetlab/experiments" element={<Experiments />} />
         <Route path="/wetlab/notebook" element={<Notebook />} />
+        <Route path="/wetlab/labsafety" element={<LabSafety />} />
 
         {/* DRY LAB */}
         <Route path="/drylab/model" element={<Model />} />
