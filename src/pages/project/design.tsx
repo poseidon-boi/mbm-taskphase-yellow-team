@@ -6,7 +6,7 @@ import design4 from "../../assets/design4.png";
 import design5 from "../../assets/design5.png";
 import design6 from "../../assets/design6.png";
 import design7 from "../../assets/design7.png";
-
+import design8 from "../../assets/design8.png";
 export default function Design() {
   useEffect(() => {
     if ((window as any).MathJax) {
@@ -285,8 +285,7 @@ export default function Design() {
       className="mx-auto w-full max-w-xl"
     />
     <p className="mt-2 text-sm">
-      Fig 6a: Accuracy of promoter found for the gene  gbd.
-    </p>
+     Fig 6b: Accuracy of the promoter of the gene downstream of gbd.</p>
 </div>
             </section>
 
@@ -297,25 +296,31 @@ export default function Design() {
               </h2>
               <div className="h-[2px] bg-black/30 mb-6" />
               <p className="text-xl">
-                Homologous recombination was selected for precise knockout
-                of the gbd gene using a suicide plasmid delivered via
-                conjugation from E. coli S17-1.
-              </p>
-            </section>
-
-            {/* ===== LIGHT-SENSITIVE PLASMID ===== */}
-            <section id="Light-Sensitive-Plasmid" className="scroll-mt-32">
-              <h2 className="text-4xl font-semibold mb-4">
-                Plasmid for the Light-Sensitive Promoter
+                We aimed to knock out the gbd gene in Cupriavidus necator H16, as it is responsible for the conversion of succinate semialdehyde to 4HB, thereby driving 4HB synthesis. To achieve precise, stable deletion of the target gene, we selected homologous recombination as our genetic modification strategy.
+</p>
+<h2 className="text-3xl font-semibold mb-4">
+                Suicide Plasmid
               </h2>
-              <div className="h-[2px] bg-black/30 mb-6" />
-              <p className="text-xl">
-                The pBBR1MCS-5 backbone was selected to clone the activation
-                and response cassettes into the MCS region, enabling
-                blue-white screening for transformant selection.
-              </p>
+              <p className="text-xl">For gene knockout in C. necator H16, conjugative plasmid transfer is required because the organism is poorly transformable, so suicide plasmids can only be efficiently delivered via conjugation. Hence, E. coli S17-1 was chosen as the appropriate donor bacterium after reviewing several papers (Tang et al., 2020) (Gascoyne et al., 2021).</p>
+            <p className="text-xl">Our plasmid includes ori, which is used only for replication in E. coli S17-1 but not in C. necator H16, and oriT, which is used for the conjugative transfer of the plasmid.
+</p>
+<p className="text-xl">After a thorough literature survey, we chose pK18msB as the optimal backbone of our suicide plasmid (Tang et al., 2020). We retrieved the homologous arms from the genome sequence of C. necator H16 by identifying gene fragments containing 500-nucleotide region upstream and downstream of the gbd gene. (Adams et al., 2023).
+</p>
+<p className="text-xl">We used the restriction endonucleases Hind III and EcoR1 after verifying that their recognition sequences were absent from the homologous arms involved in recombination.
+</p>
+<div className="mt-8 text-gray-500 text-center">
+    <img
+      src={design8}
+      alt="Structure of the EL222 light-inducible transcription unit"
+      className="mx-auto w-full max-w-xl"
+    />
+    <p className="mt-2 text-sm">
+     Fig 7: The Suicide Plasmid
+ </p>
+</div>
             </section>
 
+          
             {/* ===== REFERENCES & PARTS ===== */}
             <section id="References" className="scroll-mt-32">
               <h2 className="text-4xl font-semibold mb-4">References</h2>
