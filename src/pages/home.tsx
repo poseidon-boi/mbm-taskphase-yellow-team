@@ -8,21 +8,48 @@ gsap.registerPlugin(ScrollTrigger);
 
 export default function Home() {
   const rootRef = useRef<HTMLDivElement>(null);
-  const section2Ref = useRef<HTMLDivElement>(null);
+
+  const introRef = useRef<HTMLDivElement>(null);
+  const philosophyRef = useRef<HTMLDivElement>(null);
+
+  const challengeRef = useRef<HTMLDivElement>(null);
+  const challengeTitleRef = useRef<HTMLHeadingElement>(null);
+  const challengeCardRef = useRef<HTMLDivElement>(null);
+
+  const solutionRef = useRef<HTMLDivElement>(null);
+  const solutionTitleRef = useRef<HTMLHeadingElement>(null);
+  const solutionCardRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     const ctx = gsap.context(() => {
       /* =========================
-         SECTION 2
+         INTRO — TEAM YELLOW
       ========================== */
-      if (section2Ref.current) {
+      if (introRef.current) {
+        gsap.fromTo(
+          introRef.current.querySelectorAll(".intro-word"),
+          { y: 50, opacity: 0 },
+          {
+            y: 0,
+            opacity: 1,
+            stagger: 0.25,
+            duration: 1.2,
+            ease: "power3.out",
+          }
+        );
+      }
+
+      /* =========================
+         SECTION 2 — PHILOSOPHY
+      ========================== */
+      if (philosophyRef.current) {
         const words =
-          section2Ref.current.querySelectorAll<HTMLSpanElement>(".word");
+          philosophyRef.current.querySelectorAll<HTMLSpanElement>(".word");
 
         gsap
           .timeline({
             scrollTrigger: {
-              trigger: section2Ref.current,
+              trigger: philosophyRef.current,
               start: "top top",
               end: "+=200%",
               pin: true,
@@ -35,9 +62,73 @@ export default function Home() {
             {
               y: 0,
               opacity: 1,
-              stagger: 0.3,
+              stagger: 0.25,
               ease: "power2.out",
+            }
+          );
+      }
+
+      /* =========================
+         SECTION 3 — THE CHALLENGE
+      ========================== */
+      if (
+        challengeRef.current &&
+        challengeTitleRef.current &&
+        challengeCardRef.current
+      ) {
+        gsap
+          .timeline({
+            scrollTrigger: {
+              trigger: challengeRef.current,
+              start: "top top",
+              end: "+=150%",
+              pin: true,
+              scrub: true,
             },
+          })
+          .fromTo(
+            challengeTitleRef.current,
+            { x: -250, opacity: 0 },
+            { x: 0, opacity: 1, ease: "power3.out" },
+            0
+          )
+          .fromTo(
+            challengeCardRef.current,
+            { x: 250, opacity: 0 },
+            { x: 0, opacity: 1, ease: "power3.out" },
+            0.1
+          );
+      }
+
+      /* =========================
+         SECTION 4 — THE SOLUTION
+      ========================== */
+      if (
+        solutionRef.current &&
+        solutionTitleRef.current &&
+        solutionCardRef.current
+      ) {
+        gsap
+          .timeline({
+            scrollTrigger: {
+              trigger: solutionRef.current,
+              start: "top top",
+              end: "+=150%",
+              pin: true,
+              scrub: true,
+            },
+          })
+          .fromTo(
+            solutionTitleRef.current,
+            { x: 250, opacity: 0 },
+            { x: 0, opacity: 1, ease: "power3.out" },
+            0
+          )
+          .fromTo(
+            solutionCardRef.current,
+            { x: -250, opacity: 0 },
+            { x: 0, opacity: 1, ease: "power3.out" },
+            0.1
           );
       }
     }, rootRef);
@@ -46,8 +137,13 @@ export default function Home() {
   }, []);
 
   return (
-    <div ref={rootRef} className="w-full min-h-screen bg-[#101317]">
-      {/* HERO */}
+    <div
+      ref={rootRef}
+      className="w-full min-h-screen bg-[#101317] overflow-x-hidden"
+    >
+      {/* =========================
+          HERO — INTRODUCING TEAM YELLOW
+      ========================== */}
       <section className="relative h-screen w-full overflow-hidden">
         <video
           src={bgvid}
@@ -57,49 +153,141 @@ export default function Home() {
           playsInline
           className="absolute inset-0 w-full h-full object-cover"
         />
-        <div className="absolute inset-0 bg-black/50" />
-        <div className="relative z-10 h-full flex items-center justify-center">
-          <h1 className="text-6xl font-bold text-white tracking-wide">
-            Yellow Team
+        <div className="absolute inset-0 bg-black/60" />
+
+        <div
+          ref={introRef}
+          className="relative z-10 h-full flex flex-col items-center justify-center text-center px-6"
+        >
+          <h2 className="intro-word text-sm tracking-[0.4em] text-[#dda15e] mb-6">
+            INTRODUCING
+          </h2>
+
+          <h1 className="intro-word text-6xl md:text-8xl font-extrabold text-white">
+            PolyPrakash
           </h1>
+
+          <p className="intro-word mt-8 max-w-xl text-lg text-[#FEFAE0]/80">
+            Design with intent. Control by light.
+          </p>
         </div>
       </section>
 
-      {/* SECTION 2 */}
+      {/* =========================
+          SECTION 2 — PHILOSOPHY
+      ========================== */}
       <section
-        ref={section2Ref}
+        ref={philosophyRef}
         className="h-screen flex items-center justify-center"
       >
-        <div className="max-w-5xl px-10 space-y-6">
+        <div className="max-w-5xl px-10 space-y-10">
           {[
-            "Structure and composition define fucntion.",
-            "We didn't leave it to chance.",
-            "We let light control it.",
+            "Structure and composition define function.",
+            "We refused randomness.",
+            "We let light decide.",
           ].map((line, i) => (
-            <h2 key={i} className="text-6xl text-[#FEFAE0] font-light">
-              {line.split(" ").map((w, j) => {
-                const isHighlight =
-                  w.toLowerCase().includes("chance.") ||
-                  w.toLowerCase().includes("light");
-
-                return (
-                  <span
-                    key={j}
-                    className={`word inline-block mr-4 ${
-                      isHighlight ? "text-[#dda15e]" : ""
-                    }`}
-                  >
-                    {w}
-                  </span>
-                );
-              })}
+            <h2
+              key={i}
+              className="text-5xl md:text-6xl text-[#FEFAE0] font-light"
+            >
+              {line.split(" ").map((word, j) => (
+                <span
+                  key={j}
+                  className={`word inline-block mr-4 ${
+                    word.toLowerCase().includes("light")
+                      ? "text-[#dda15e]"
+                      : ""
+                  }`}
+                >
+                  {word}
+                </span>
+              ))}
             </h2>
           ))}
         </div>
       </section>
 
-      {/* END SPACER */}
-      <div className="h-[20vh] bg-[#101317]" />
+      {/* =========================
+          SECTION 3 — THE CHALLENGE
+      ========================== */}
+      <section
+        ref={challengeRef}
+        className="h-screen flex items-center bg-[#101317] overflow-hidden"
+      >
+        <div className="w-full flex items-center justify-between px-16 gap-16">
+          <h2
+            ref={challengeTitleRef}
+            className="text-7xl md:text-8xl font-extrabold text-[#FEFAE0]"
+          >
+            THE
+            <br />
+            CHALLENGE
+          </h2>
+
+          <div
+            ref={challengeCardRef}
+            className="max-w-xl bg-[#FEFAE0] text-[#101317] p-10 rounded-2xl shadow-2xl"
+          >
+            <p className="text-xl font-medium mb-6">Right now:</p>
+            <ul className="space-y-4 text-lg">
+              <li>
+                Some biodegradable plastics degrade too slowly and still behave
+                like microplastics.
+              </li>
+              <li>
+                Some degrade too fast, losing strength before their job is done.
+              </li>
+              <li>Most of them cannot be adjusted once produced.</li>
+              <li>
+                The same material is forced into very different applications
+                even though each use needs different properties.
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      {/* =========================
+          SECTION 4 — THE SOLUTION
+      ========================== */}
+      <section
+        ref={solutionRef}
+        className="h-screen flex items-center bg-[#101317] overflow-hidden"
+      >
+        <div className="w-full flex items-center justify-between px-16 gap-16">
+          <div
+            ref={solutionCardRef}
+            className="max-w-xl bg-[#FEFAE0] text-[#101317] p-10 rounded-2xl shadow-2xl"
+          >
+            <p className="text-xl font-medium mb-6">Our approach:</p>
+            <ul className="space-y-4 text-lg">
+              <li>
+                We decouple material function from fixed composition.
+              </li>
+              <li>
+                Degradation rate becomes a controllable parameter, not a guess.
+              </li>
+              <li>
+                Light acts as a switch, not an afterthought.
+              </li>
+              <li>
+                One system, tuned differently for every application.
+              </li>
+            </ul>
+          </div>
+
+          <h2
+            ref={solutionTitleRef}
+            className="text-7xl md:text-8xl font-extrabold text-[#FEFAE0] text-right"
+          >
+            THE
+            <br />
+            SOLUTION
+          </h2>
+        </div>
+      </section>
+
+      <div className="h-[20vh]" />
     </div>
   );
 }

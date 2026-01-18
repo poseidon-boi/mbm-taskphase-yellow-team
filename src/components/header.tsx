@@ -14,7 +14,7 @@ function Header() {
       <div className="flex justify-between items-center px-8 py-5 text-[#F4F6F3]">
         {/* LOGO */}
         <Link to="/home" className="text-4xl font-medium tracking-wide">
-          <h1>Yellow Team</h1>
+          <h1>PolyPrakash</h1>
         </Link>
 
         {/* NAV */}
