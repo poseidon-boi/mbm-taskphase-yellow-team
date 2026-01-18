@@ -131,7 +131,7 @@ function Software() {
       <div className="h-[2px] bg-black/30 mb-8" />
 
       <ul className="list-disc pl-6 space-y-4 text-xl">
-        <li><strong>Host organism:</strong> The strain of bacteria used for the job such as in this case <em>Cupriavidus necator  H16</em>.
+        <li><strong>Host organism:</strong> The strain of bacteria used for the job such as in this case <em>Cupriavidus necator  H16</em>.</li>
         <li><strong>Load:</strong> Plasmid size (kb)</li>
         <li><strong>Gene of interest:</strong> The gene that is undergoing modification.</li>
         <li><strong>Nature of perturbation:</strong> Modification to be applied such as knockout or overexpression.</li>
