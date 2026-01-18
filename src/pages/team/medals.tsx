@@ -12,6 +12,8 @@ function Medals() {
   const Button = ({ label, href }: { label: string; href: string }) => (
     <a
       href={href}
+      target="_blank"
+      rel="noopener noreferrer"
       className="
       inline-block
   px-10 py-5

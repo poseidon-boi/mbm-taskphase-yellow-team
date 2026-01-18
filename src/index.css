@@ -5,7 +5,9 @@ body {
   margin: 0;
   padding: 0;
   width: 100%;
-  background-color: #283618;
+  background-image: url("./assets//background.png");
+  background-repeat: repeat;
+  background-position: top left;
   font-family: "PT Sans", sans-serif;
 
   /* locked during loader */

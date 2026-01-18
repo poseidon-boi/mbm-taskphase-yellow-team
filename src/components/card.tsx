@@ -18,7 +18,7 @@ function Card({ image, name, subsystem, fuel }: CardProps) {
         <h3 className="text-4xl font-bold">{name}</h3>
         <p className="text-xl opacity-70">{subsystem}</p>
         <p className="text-lg leading-relaxed opacity-80">
-          What is your igem fuel?
+          What is your IGem fuel?
         </p>
         <p>{fuel}</p>
       </div>

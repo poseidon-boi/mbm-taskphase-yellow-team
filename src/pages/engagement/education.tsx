@@ -10,17 +10,17 @@ function Education() {
     ));
 
   return (
-    <div className="w-full bg-[#1F2A13] text-white">
+    <div className="w-full text-white">
       {/* ===== TITLE ROW ===== */}
       <div className="pt-32 pb-24 flex justify-center">
         <h1 className="text-6xl font-bold">{renderTitleHover("Education")}</h1>
       </div>
 
       {/* ===== TWO-COLUMN LAYOUT ===== */}
-      <div className="flex w-full min-h-screen px-10 gap-5">
+      <div className="flex px-10 gap-5">
         {/* LEFT SIDEBAR */}
-        <aside className="w-[10%] px-6 sticky mt-5 top-32 self-start">
-          <nav className="flex flex-col gap-7 text-lg">
+        <aside className="w-[15%] px-6 sticky mt-5 top-32 self-start">
+          <nav className="flex flex-col gap-7 text-lg bg-[#1F2A13] p-3">
             <a
               href="#overview"
               className="group relative w-fit text-white/80 hover:text-white transition-colors"

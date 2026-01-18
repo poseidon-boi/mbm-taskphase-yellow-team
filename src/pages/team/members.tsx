@@ -15,6 +15,8 @@ import ruchi from "../../assets/ruchi.jpeg";
 import sharon from "../../assets/sharon.png";
 import shreyas from "../../assets/shreyas.png";
 
+import team from "../../assets/team.mp4";
+
 const membersData = [
   {
     image: aaryan,
@@ -132,6 +134,17 @@ function Members() {
         <h1 className="text-6xl text-white font-bold">
           {renderTitleHover("Meet the Team!")}
         </h1>
+      </div>
+      <div className="mb-50 bg-[#FEFAE0] p-2 rounded-xl mx-auto w-fit">
+  <div className="flex justify-center items-center overflow-hidden">
+    <video
+          src={team}
+          autoPlay
+          muted
+          loop
+          className="block"
+        />
+      </div>
       </div>
 
       {/* Carousel */}
