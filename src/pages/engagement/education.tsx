@@ -23,7 +23,7 @@ function Education() {
           <nav className="flex flex-col gap-7 text-lg bg-[#1F2A13] p-3">
             <a
               href="#overview"
-              className="group relative w-fit text-white/80 hover:text-white transition-colors"
+              className="group relative w-fit text-white/80 hover:text-white"
             >
               Overview
               <span className="absolute -bottom-1 left-0 h-[2px] w-0 bg-[#dda13e] transition-all duration-300 group-hover:w-full" />
@@ -31,7 +31,7 @@ function Education() {
 
             <a
               href="#six-to-ten"
-              className="group relative w-fit text-white/80 hover:text-white transition-colors"
+              className="group relative w-fit text-white/80 hover:text-white"
             >
               6–10 Years
               <span className="absolute -bottom-1 left-0 h-[2px] w-0 bg-[#dda13e] transition-all duration-300 group-hover:w-full" />
@@ -39,7 +39,7 @@ function Education() {
 
             <a
               href="#eleven-to-fifteen"
-              className="group relative w-fit text-white/80 hover:text-white transition-colors"
+              className="group relative w-fit text-white/80 hover:text-white"
             >
               11–15 Years
               <span className="absolute -bottom-1 left-0 h-[2px] w-0 bg-[#dda13e] transition-all duration-300 group-hover:w-full" />
@@ -47,7 +47,7 @@ function Education() {
 
             <a
               href="#sixteen-to-eighteen"
-              className="group relative w-fit text-white/80 hover:text-white transition-colors"
+              className="group relative w-fit text-white/80 hover:text-white"
             >
               16–18 Years
               <span className="absolute -bottom-1 left-0 h-[2px] w-0 bg-[#dda13e] transition-all duration-300 group-hover:w-full" />
@@ -55,9 +55,25 @@ function Education() {
 
             <a
               href="#college"
-              className="group relative w-fit text-white/80 hover:text-white transition-colors"
+              className="group relative w-fit text-white/80 hover:text-white"
             >
               College Students
+              <span className="absolute -bottom-1 left-0 h-[2px] w-0 bg-[#dda13e] transition-all duration-300 group-hover:w-full" />
+            </a>
+
+            <a
+              href="#other-initiatives"
+              className="group relative w-fit text-white/80 hover:text-white"
+            >
+              Other Initiatives
+              <span className="absolute -bottom-1 left-0 h-[2px] w-0 bg-[#dda13e] transition-all duration-300 group-hover:w-full" />
+            </a>
+
+            <a
+              href="#schools"
+              className="group relative w-fit text-white/80 hover:text-white"
+            >
+              Schools
               <span className="absolute -bottom-1 left-0 h-[2px] w-0 bg-[#dda13e] transition-all duration-300 group-hover:w-full" />
             </a>
           </nav>
@@ -290,6 +306,91 @@ function Education() {
                 Students developed the ability to analyze complex problems from
                 multiple perspectives.
               </p>
+            </section>
+
+            <section id="other-initiatives" className="mb-12">
+              <h2 className="mt-5 text-4xl font-semibold mb-6">
+                Other Possible Educational and Engagement Initiatives
+              </h2>
+              <div className="h-[2px] bg-black/30 mb-8" />
+              <div className="space-y-8 text-xl">
+                {/* MBM x NSS / RedX */}
+                <div>
+                  <h3 className="text-2xl font-semibold mb-2">
+                    1. MBM × NSS / RedX
+                  </h3>
+                  <p>
+                    MBM can collaborate with NSS/RedX to organise a beach
+                    cleanup drive, helping students directly observe the sheer
+                    amount of plastic waste in their surroundings and understand
+                    its harmful impact on the environment. This activity would
+                    also raise students' awareness of plastic consumption and
+                    show how the use of biodegradable polymers, such as{" "}
+                    <em>P(3HB-co-4HB)</em>, can make a significant positive
+                    impact.
+                  </p>
+                </div>
+
+                {/* MBM x IE-BT */}
+                <div>
+                  <h3 className="text-2xl font-semibold mb-2">
+                    2. MBM × IE-BT
+                  </h3>
+                  <p>
+                    MBM can also collaborate with IE-BT to organise guest
+                    speaker sessions in which experts discuss the importance of
+                    reducing conventional plastic use, the harmful effects of
+                    plastics on the environment, and the various applications of
+                    plastics. These sessions would also highlight how
+                    biopolymers can be used to produce biodegradable
+                    alternatives, and how synthetic biology-produced plastics,
+                    such as <em>P(3HB-co-4HB)</em>, have the potential for
+                    scale-up and wide-ranging applications.
+                  </p>
+                </div>
+
+                {/* All India iGEM Meet */}
+                <div>
+                  <h3 className="text-2xl font-semibold mb-2">
+                    3. All India iGEM Meet
+                  </h3>
+                  <p>
+                    The All India iGEM Meet is an opportunity to connect with
+                    students and participants from across the country. Through
+                    talks, workshops, and interactive sessions, we can help
+                    people understand the impact of plastic pollution and
+                    inspire them to see the potential of biodegradable plastics
+                    in making a real difference in everyday life.
+                  </p>
+                </div>
+              </div>
+            </section>
+
+            <section id="schools" className="mb-12">
+              <h2 className="text-4xl font-semibold mb-6">
+                Schools We Will Visit
+              </h2>
+              <div className="h-[2px] bg-black/30 mb-8" />
+              <p className="text-xl mb-6">
+                We believe that education must begin locally at the origin of
+                our project and expand nationwide. Therefore, this is the list
+                of schools we aim to conduct our activities and sessions at:
+              </p>
+
+              <ol className="list-decimal pl-6 space-y-2 text-xl">
+                <li>Nehru High School, Alevoor, Udupi</li>
+                <li>Ambalpady English Medium School, Udupi</li>
+                <li>Little Rock Indian School, Brahmavara</li>
+                <li>Sacred Heart Girls High School, Bangalore</li>
+                <li>Bangalore International Academy, Bangalore</li>
+                <li>National Centre for Excellence, Bangalore</li>
+                <li>Sushila Birla Girls School, Kolkata</li>
+                <li>Vidya Mandir Estancia, Chennai</li>
+                <li>St. Gregorios School, New Delhi</li>
+                <li>Meridian School, Hyderabad</li>
+                <li>Alpine Public School, Bengaluru</li>
+                <li>Hiranandani Foundation School, Thane</li>
+              </ol>
             </section>
           </div>
         </main>

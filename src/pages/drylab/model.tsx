@@ -29,8 +29,8 @@ export default function Model() {
       {/* ===== TWO COLUMN LAYOUT ===== */}
       <div className="flex w-full min-h-screen px-10">
         {/* ===== LEFT SIDEBAR ===== */}
-        <aside className="w-[10%] px-8 sticky top-32 mt-10 self-start">
-          <nav className="flex flex-col gap-3 text-xl">
+        <aside className="w-[15%] px-8 sticky top-32 mt-10 self-start">
+          <nav className="flex flex-col gap-3 p-3 text-xl bg-[#1F2A13]">
             {[
               "Purpose",
               "Scope",
@@ -297,11 +297,12 @@ export default function Model() {
     The intracellular 4HB monomer pool (M<sub>1</sub>) is governed by:
   </p>
 
-  <div className="bg-white rounded-lg border border-black/20 p-6 mb-8 text-xl overflow-x-auto">
-    {"$$"}
-    {"\\frac{d[M_1]}{dt} = v^{light}_{4HB} - k_{phaC}[PhaC][M_1]"}
-    {"$$"}
-  </div>
+  <div className="text-xl my-6">
+  {"$$"}
+  {"\\frac{d[M_1]}{dt} = v^{light}_{4HB} - k_{phaC}[PhaC][M_1]"}
+  {"$$"}
+</div>
+
 
   <table className="w-full border-collapse text-lg mb-6">
     <thead>
@@ -363,11 +364,12 @@ export default function Model() {
     pathway:
   </p>
 
-  <div className="bg-white rounded-lg border border-black/20 p-6 mb-8 text-xl overflow-x-auto">
-    {"$$"}
-    {"\\frac{d[M_2]}{dt} = v^{const}_{3HB} - k_{phaC}[PhaC][M_2]"}
-    {"$$"}
-  </div>
+  <div className="text-xl my-6">
+  {"$$"}
+  {"\\frac{d[M_2]}{dt} = v^{const}_{3HB} - k_{phaC}[PhaC][M_2]"}
+  {"$$"}
+</div>
+
 
   <table className="w-full border-collapse text-lg mb-6">
     <thead>
@@ -416,8 +418,6 @@ export default function Model() {
   </p>
 </section>
 
-<hr className="my-16 border-black/30" />
-
 {/* ===== 8. Polymer Formation by Native PhaC ===== */}
 <section className="mb-16 scroll-mt-32">
   <h2 className="text-4xl font-semibold mb-6">
@@ -432,11 +432,12 @@ export default function Model() {
     Polymer accumulation is modeled as:
   </p>
 
-  <div className="bg-white rounded-lg border border-black/20 p-6 mb-6 text-xl overflow-x-auto">
-    {"$$"}
-    {"\\frac{dP}{dt} = k_{phaC}[PhaC](M_1 + M_2)"}
-    {"$$"}
-  </div>
+ <div className="text-xl my-6">
+  {"$$"}
+  {"\\frac{dP}{dt} = k_{phaC}[PhaC](M_1 + M_2)"}
+  {"$$"}
+</div>
+
 
   <p className="text-xl">
     Polymer accumulation therefore reflects the total availability of monomer
@@ -456,11 +457,12 @@ export default function Model() {
     The fraction of 4HB incorporated into the polymer is defined as:
   </p>
 
-  <div className="bg-white rounded-lg border border-black/20 p-6 mb-6 text-xl overflow-x-auto">
-    {"$$"}
-    {"\\text{4HB fraction} = \\frac{M_1}{M_1 + M_2}"}
-    {"$$"}
-  </div>
+ <div className="text-xl my-6">
+  {"$$"}
+  {"\\text{4HB fraction} = \\frac{M_1}{M_1 + M_2}"}
+  {"$$"}
+</div>
+
 
   <p className="text-xl">
     Extensive PHA literature demonstrates that intracellular monomer ratios are
@@ -490,8 +492,8 @@ export default function Model() {
 
             {/* ===== REFERENCES ===== */}
             <section id="References" className="scroll-mt-32">
-              <h2 className="text-4xl font-semibold mb-4">References</h2>
-
+              <h2 className="mt-5 text-4xl font-semibold mb-4">References</h2>
+              <div className="h-[2px] bg-black/30 mb-8" />
               <ol className="list-decimal pl-6 space-y-6 text-xl">
                 <li>
                   Jayaraman, P., et al. (2016). <em>Nucleic Acids Research</em>.
