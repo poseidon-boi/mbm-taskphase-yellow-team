@@ -152,7 +152,7 @@ function IntegratedHumanPractices() {
         Engineering, Dankook University
       </p>
       <p className="text-xl mb-4">
-        <strong>Designation:</strong> Dr. Sooan Shin – researcher-founder-entrepreneur,
+        <strong>Designation:</strong> Dr. Sooan Shin – researcher, founder, entrepreneur,
         HOD of Korea Biofoundry, CEO and founder of Accurie Biosciences
       </p>
       <p className="text-xl">
@@ -173,7 +173,7 @@ function IntegratedHumanPractices() {
         Manipal Institute of Technology, Manipal.
       </p>
       <p className="text-xl">
-        We discussed the biomedical applications of our copolymer and learned how its properties  mechanical strength, melting point, and crystallinity—affect its performance in different uses. We also understood that each application has unique requirements, and for drug delivery, the polymer must have the right balance of hardness and softness for each specific drug.</p>
+        We discussed the biomedical applications of our copolymer and learned how its properties  mechanical strength, melting point, and crystallinity affect its performance in different uses. We also understood that each application has unique requirements, and for drug delivery, the polymer must have the right balance of hardness and softness for each specific drug.</p>
     </>
   ),
 },
@@ -205,7 +205,7 @@ function IntegratedHumanPractices() {
         Manipal Institute of Technology, Manipal.
       </p>
       <p className="text-xl">
-        Professor Divyashree M S gave very important information about the factors that affect the creation of 4 Hydroxybutyrte (4HBs). She told that 4HB's formation is influenced by the substrate and the ratio of carbon (C) to nitrogen (N) in the growth medium, which must be very carefully kept throughout the growth process. She pointed out that exact management of nutrient composition during organism growth is very important to get the desired structural assembly.
+        Professor Divyashree M S gave very important information about the factors that affect the creation of 4 Hydroxybutyrate (4HBs). She told that 4HB's formation is influenced by the substrate and the ratio of carbon (C) to nitrogen (N) in the growth medium, which must be very carefully kept throughout the growth process. She pointed out that exact management of nutrient composition during organism growth is very important to get the desired structural assembly.
 </p>
     </>
   ),
