@@ -77,15 +77,7 @@ function IntegratedHumanPractices() {
         are unpublished or experimentally challenging to obtain.
       </p>
       <p className="text-xl">
-        <strong>Response from Professor Christophe LeMoine:</strong> Professor
-        LeMoine explained that the glycol detected in his group's study was
-        identified using a general biochemical glycol assay, which does not allow
-        definitive confirmation that the compound is ethylene glycol. He clarified
-        that, to his knowledge, there are currently no published studies that clearly
-        identify and quantitatively measure ethylene glycol as a confirmed
-        by-product of polyethylene degradation by <em>Galleria mellonella</em>.
-        This caused us to run into a bottleneck, after which we could no longer
-        continue with this project.
+        <strong> Professor LeMoine</strong> explained that the glycol detected in his group's study was identified using a general biochemical glycol assay, which does not allow definitive confirmation that the compound is ethylene glycol. He clarified that, to his knowledge, there are currently no published studies that clearly identify and quantitatively measure ethylene glycol as a confirmed by-product of polyethylene degradation by Galleria mellonella. This caused us to run into a bottleneck, after which we could no longer continue with this project.
       </p>
     </>
   ),
@@ -103,15 +95,7 @@ function IntegratedHumanPractices() {
         Tongji University
       </p>
       <p className="text-xl">
-        We contacted Dr Huang and Dr Liu to understand whether
-        <em> Rhodotorula toruloides</em> has ever been observed to secrete TAGs
-        outside the cell. We were curious about why this behaviour differs from
-        that of other oleaginous yeasts such as <em>Cryptococcus curvatus</em>.
-        We also asked whether cultivation strategies from previous studies could be
-        combined with genetic engineering to enable extracellular TAG production.
-        Finally, we requested their suggestions on strains, conditions, and
-        modifications that could help guide our project direction. However, this
-        outreach was related to a previous project.
+        We contacted Dr Huang and Dr Liu to understand whether Rhodotorula toruloides  has ever been observed to secrete TAGs outside the cell. We were curious about why this behaviour differs from that of other oleaginous yeasts such as Cryptococcus curvatus. We also asked whether cultivation strategies from previous studies could be combined with genetic engineering to enable extracellular TAG production. Finally, we requested their suggestions on strains, conditions, and modifications that could help guide our project direction. However, this outreach was related to a previous project.
       </p>
     </>
   ),
@@ -129,16 +113,7 @@ function IntegratedHumanPractices() {
         University of Amsterdam
       </p>
       <p className="text-xl">
-        We asked Professor Gruter if the glucose from polycotton acid hydrolysis
-        could go straight into microbial fermentation. We wanted to know how
-        by-products from degradation, like HMF and Levulinic acid, might slow down
-        yeast growth. We also looked into whether salt formation during
-        neutralization could cause stress to <em>Rhodotorula toruloides</em>.
-        We questioned whether the initial breakdown of the material would yield
-        sufficient sugars for fermentation or whether additional enzymes would be
-        required. We also explored the feasibility of integrating textile waste
-        degradation with microbial oil production. This line of inquiry was
-        informed by our previous project.
+         We asked Professor Gruter if the glucose from polycotton acid hydrolysis could go straight into microbial fermentation. We wanted to know how by-products from degradation, like HMF and Levulinic acid, might slow down yeast growth. We also looked into whether salt formation during neutralization could cause stress to Rhodotorula toruloides. We questioned whether the initial breakdown of the material would yield sufficient sugars for fermentation or whether additional enzymes would be required. We also explored the feasibility of integrating textile waste degradation with microbial oil production. This line of inquiry was informed by our previous project.
       </p>
     </>
   ),
@@ -160,17 +135,7 @@ function IntegratedHumanPractices() {
         University College London.
       </p>
       <p className="text-xl">
-        We reached out to Dr. Sharifulden and Dr. Lady V. Barrios Silva to obtain
-        quantitative data on the material properties of the P(3HB-co-4HB)
-        copolymer, with particular interest in the 40 mol% 4HB composition. We
-        wanted to know some details about tensile strength, Young's modulus, how
-        much it stretched before breaking, its crystallinity, and its thermal
-        properties. We were particularly interested in assessing whether this
-        copolymer could effectively substitute for polycaprolactone, especially
-        in those biomedical masks that use thermoplastics. We also asked if they
-        could share any unpublished or extra data to help us pick the right
-        materials. Unfortunately, we did not recieve any response from them.
-      </p>
+        We reached out to Dr. Sharifulden and Dr. Lady V. Barrios Silva to obtain quantitative data on the material properties of the P(3HB-co-4HB) copolymer, with particular interest in the 40 mol% 4HB composition. We wanted to know some details about tensile strength, Young's modulus, how much it stretched before breaking, its crystallinity, and its thermal properties. We were particularly interested in assessing whether this copolymer could effectively substitute for polycaprolactone, especially in those biomedical masks that use thermoplastics. We also asked if they could share any unpublished or extra data to help us pick the right materials. Unfortunately, we did not recieve any response from them.</p>
     </>
   ),
 },
@@ -191,18 +156,7 @@ function IntegratedHumanPractices() {
         HOD of Korea Biofoundry, CEO and founder of Accurie Biosciences
       </p>
       <p className="text-xl">
-        We reached out to them asking for extensive material property data for
-        blends of P(3HB-co-4HB) copolymers that would be used for biodegradable
-        thermoplastic mask applications. We directed our interest in particular
-        ratios of blends and requested properties such as mechanical, thermal,
-        crystallinity, and melt processing, which could help us in understanding
-        and discovering practical applications. Since some of this information
-        was not completely found in the literature, we also inquired if any
-        additional or non-published data could be disclosed. Our goal was to
-        prevent any ungrounded choices from affecting material selection by being
-        well-informed and scientifically supported design choices. However we
-        received no response from them.
-      </p>
+        We reached out to them asking for extensive material property data for blends of P(3HB-co-4HB) copolymers that would be used for biodegradable thermoplastic mask applications. We directed our interest in particular ratios of blends and requested properties such as mechanical, thermal, crystallinity, and melt processing, which could help us in understanding and discovering practical applications. Since some of this information was not completely found in the literature, we also inquired if any additional or non-published data could be disclosed. Our goal was to prevent any ungrounded choices from affecting material selection by being well-informed and scientifically supported design choices. However we received no response from them.</p>
     </>
   ),
 },
@@ -219,13 +173,7 @@ function IntegratedHumanPractices() {
         Manipal Institute of Technology, Manipal.
       </p>
       <p className="text-xl">
-        We discussed the biomedical applications of our copolymer and learned how
-        its properties mechanical strength, melting point, and crystallinity—
-        affect its performance in different uses. We also understood that each
-        application has unique requirements, and for drug delivery, the polymer
-        must have the right balance of hardness and softness for each specific
-        drug.
-      </p>
+        We discussed the biomedical applications of our copolymer and learned how its properties  mechanical strength, melting point, and crystallinity—affect its performance in different uses. We also understood that each application has unique requirements, and for drug delivery, the polymer must have the right balance of hardness and softness for each specific drug.</p>
     </>
   ),
 },
@@ -239,14 +187,8 @@ function IntegratedHumanPractices() {
         Automobile Engineering, Manipal Institute of Technology, Manipal.
       </p>
       <p className="text-xl">
-        E-mail sent to Dr. Dayananda K. Pai: We reached out to Dr. Pai for a quick
-        talk on polyhydroxybutyrate (PHB) and its material properties. We inquired
-        about his convenience for a short talk to receive professional assistance
-        for our project related to polymers. Our goal was to acquire a deeper
-        understanding of PHB characteristics from a materials science angle and
-        to direct our project better with the help of an expert's input.
-        Unfortunately, we didn’t hear back from him.
-      </p>
+        E-mail sent to Dr. Dayananda K. Pai: We reached out to Dr. Pai for a quick talk on polyhydroxybutyrate (PHB) and its material properties. We inquired about his convenience for a short talk to receive professional assistance for our project related to polymers. Our goal was to acquire a deeper understanding of PHB characteristics from a materials science angle and to direct our project better with the help of an expert's input. Unfortunately, we didn’t hear back from him.
+</p>
     </>
   ),
 },
@@ -263,14 +205,8 @@ function IntegratedHumanPractices() {
         Manipal Institute of Technology, Manipal.
       </p>
       <p className="text-xl">
-        Professor Divyashree M S gave very important information about the factors
-        that affect the creation of 4 Hydroxybutyrte (4HBs). She told that 4HB's
-        formation is influenced by the substrate and the ratio of carbon (C) to
-        nitrogen (N) in the growth medium, which must be very carefully kept
-        throughout the growth process. She pointed out that exact management of
-        nutrient composition during organism growth is very important to get the
-        desired structural assembly.
-      </p>
+        Professor Divyashree M S gave very important information about the factors that affect the creation of 4 Hydroxybutyrte (4HBs). She told that 4HB's formation is influenced by the substrate and the ratio of carbon (C) to nitrogen (N) in the growth medium, which must be very carefully kept throughout the growth process. She pointed out that exact management of nutrient composition during organism growth is very important to get the desired structural assembly.
+</p>
     </>
   ),
 },
@@ -287,10 +223,9 @@ function IntegratedHumanPractices() {
         Manipal Institute of Technology, Manipal.
       </p>
       <p className="text-xl">
-        Professor Subramanyam B H explained that the position of
-        4-hydroxybutyrate (4HB) units in a copolymer influences its mechanical
-        properties. Uniform 4HB distribution improves flexibility and reduces
-        brittleness.
+        Professor Subramanyam B H explained that the position of 4-hydroxybutyrate (4HB) units in a copolymer influences its mechanical properties. Uniform 4HB distribution improves flexibility and reduces brittleness. 
+
+
       </p>
     </>
   ),
