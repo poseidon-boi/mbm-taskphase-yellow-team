@@ -1,5 +1,3 @@
-import React from 'react';
-
 function Attributions() {
   const renderTitleHover = (text: string) =>
     text.split("").map((char, i) => (
