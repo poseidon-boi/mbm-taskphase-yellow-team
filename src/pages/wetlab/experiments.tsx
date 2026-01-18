@@ -178,7 +178,7 @@ function Experiments() {
               <h3 className="text-2xl font-bold mb-2">Procedure:</h3>
               <ol className="list-decimal ml-6 text-xl space-y-2 mb-8">
                 <li>The DNA sample ...</li>
-                <li>6. DNA ligase is added to allow.</li>
+                <li>DNA ligase is added to allow.</li>
                 <li>The process is completed by enzyme inactivation and gel electrophoresis to confirm fragment size.</li>
               </ol>
             </section>
@@ -207,21 +207,21 @@ function Experiments() {
 
               <h3 className="text-2xl font-bold mb-2 mt-6">Materials Required:</h3>
               <ul className="list-disc ml-6 text-lg mb-6">
-                <li>4. Escherichia coli S17-1 donor strain carrying suicide plasmid</li>
-                <li>5. LB or low salt LB MOPS medium ...</li>
-                <li>10. Agar plates</li>
-                <li>11. PCR reagents and primers flanking the target locus</li>
+                <li>Escherichia coli S17-1 donor strain carrying suicide plasmid</li>
+                <li>LB or low salt LB MOPS medium ...</li>
+                <li>Agar plates</li>
+                <li>PCR reagents and primers flanking the target locus</li>
               </ul>
               <h3 className="text-2xl font-bold mb-2">Procedure:</h3>
               <ol className="list-decimal ml-6 text-xl space-y-2 mb-8">
                 <li>Grow Escherichia coli ...</li>
-                <li>9. Perform colony PCR to confirm gene knockout.</li>
+                <li>Perform colony PCR to confirm gene knockout.</li>
               </ol>
             </section>
 
-            {/* 12. Expression Plasmid Transformation */}
+            {/* Expression Plasmid Transformation */}
             <section id="Heat Shock Expression">
-              <h2 className="text-5xl font-semibold mb-4 text-black">12. Heat Shock Transformation of Expression Plasmid into Escherichia coli S17-1</h2>
+              <h2 className="text-5xl font-semibold mb-4 text-black">8. Heat Shock Transformation of Expression Plasmid into Escherichia coli S17-1</h2>
               <div className="h-[2px] bg-black/20 mb-8" />
               <p className="text-xl mb-4 font-bold">Aim: To introduce expression plasmid into Escherichia coli S17-1</p>
               <h3 className="text-2xl font-bold mb-2">Procedure:</h3>
@@ -230,19 +230,19 @@ function Experiments() {
 
             {/* 13. Blue White Screening */}
             <section id="Blue White Screening">
-              <h2 className="text-5xl font-semibold mb-4 text-black">13. Blue White Screening</h2>
+              <h2 className="text-5xl font-semibold mb-4 text-black">9. Blue White Screening</h2>
               <div className="h-[2px] bg-black/20 mb-8" />
               <p className="text-xl mb-4 font-bold">Aim: To confirm the transformation of expression plasmid into Escherichia coli S17-1.</p>
               
               <h3 className="text-2xl font-bold mb-2 mt-6">Materials Required:</h3>
               <ul className="list-disc ml-6 text-lg mb-6">
-                <li>1. Escherichia coli S17-1 culture ...</li>
-                <li>11. Inoculating needles</li>
+                <li>Escherichia coli S17-1 culture ...</li>
+                <li>Inoculating needles</li>
               </ul>
               <h3 className="text-2xl font-bold mb-2">Procedure:</h3>
               <ol className="list-decimal ml-6 text-xl space-y-2 mb-8">
                 <li>Pour measured amounts ...</li>
-                <li>8. Then, the colonies carrying the recombinant plasmids are selected and cultured.</li>
+                <li>Then, the colonies carrying the recombinant plasmids are selected and cultured.</li>
                 <ul className="list-circle ml-8">
                   <li>Colonies that carry wild-type plasmids ...</li>
                   <li>Colonies that carry recombinant plasmids ...</li>
@@ -252,7 +252,7 @@ function Experiments() {
 
             {/* 14. Conjugation Expression */}
             <section id="Conjugation Expression">
-              <h2 className="text-5xl font-semibold mb-4 text-black">14. Conjugation of Escherichia coli S17-1 carrying expression plasmid into Cupriavidus necator H16</h2>
+              <h2 className="text-5xl font-semibold mb-4 text-black">10. Conjugation of Escherichia coli S17-1 carrying expression plasmid into Cupriavidus necator H16</h2>
               <div className="h-[2px] bg-black/20 mb-8" />
               <p className="text-xl mb-4 font-bold">Aim: To transfer expression plasmid ...</p>
               <h3 className="text-2xl font-bold mb-2">Materials Required:</h3>
@@ -269,7 +269,7 @@ function Experiments() {
 
             {/* 22. Cultivation */}
             <section id="Nitrogen Limited Cultivation">
-              <h2 className="text-5xl font-semibold mb-4 text-black">22. Cultivation of Cupriavidus necator H16 under nitrogen-limited conditions to synthesise P(3HB-co-4HB)</h2>
+              <h2 className="text-5xl font-semibold mb-4 text-black">11. Cultivation of Cupriavidus necator H16 under nitrogen-limited conditions to synthesise P(3HB-co-4HB)</h2>
               <div className="h-[2px] bg-black/20 mb-8" />
               <p className="text-xl mb-4 font-bold">Aim: Cultivate Cupriavidus necator H16 under nitrogen-limited conditions ...</p>
               <h3 className="text-2xl font-bold mb-2">Materials Required:</h3>

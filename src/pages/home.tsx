@@ -229,20 +229,7 @@ export default function Home() {
             className="max-w-xl bg-[#FEFAE0] text-[#101317] p-10 rounded-2xl shadow-2xl"
           >
             <p className="text-xl font-medium mb-6">Right now:</p>
-            <ul className="space-y-4 text-lg">
-              <li>
-                Some biodegradable plastics degrade too slowly and still behave
-                like microplastics.
-              </li>
-              <li>
-                Some degrade too fast, losing strength before their job is done.
-              </li>
-              <li>Most of them cannot be adjusted once produced.</li>
-              <li>
-                The same material is forced into very different applications
-                even though each use needs different properties.
-              </li>
-            </ul>
+            While P(3HB-co-4HB) offers diverse material properties, precise and dynamic tunability remains a key limitation. Current production strategies rely on static control, restricting real-time adjustment of polymer composition.
           </div>
         </div>
       </section>
@@ -260,20 +247,7 @@ export default function Home() {
             className="max-w-xl bg-[#FEFAE0] text-[#101317] p-10 rounded-2xl shadow-2xl"
           >
             <p className="text-xl font-medium mb-6">Our approach:</p>
-            <ul className="space-y-4 text-lg">
-              <li>
-                We decouple material function from fixed composition.
-              </li>
-              <li>
-                Degradation rate becomes a controllable parameter, not a guess.
-              </li>
-              <li>
-                Light acts as a switch, not an afterthought.
-              </li>
-              <li>
-                One system, tuned differently for every application.
-              </li>
-            </ul>
+            To address this, we developed a light-tunable system that dynamically regulates 4HB incorporation during polymer synthesis. This optogenetic approach enables precise, reversible control over polymer properties.
           </div>
 
           <h2
