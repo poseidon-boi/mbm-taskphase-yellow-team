@@ -1,6 +1,10 @@
 import { useEffect } from "react";
 import design1 from "../../assets/design1.png";
 import design2 from "../../assets/desing2.png";
+import design3 from "../../assets/design3.png";
+import design4 from "../../assets/design4.png";
+import design5 from "../../assets/design5.png";
+import design6 from "../../assets/design6.png";
 
 export default function Design() {
   useEffect(() => {
@@ -145,6 +149,15 @@ export default function Design() {
               <p className="text-xl">
                 The terminator we have used is rrnbT1. The highly stable hairpin structure of this terminator causes the detachment of the RNAP from the DNA. It is characterized to have more than 95% strength in termination. The part was characterized on Escherichia coli BW25113. The termination efficiency was calculated by measuring the fluorescence from the reporter gene GFP and RFP (Cambray et al., 2013).
 </p>
+<div className="mt-8 text-gray-500 text-center">
+    <img
+      src={design3}
+      alt="Structure of the EL222 light-inducible transcription unit"
+      className="mx-auto w-full max-w-xl"
+    />
+    <p className="mt-2 text-sm">
+     Fig 3: The constructed activation cassette made on Benchling.</p>
+</div>
             </section>
 
             {/* ===== RESPONSE CASSETTE ===== */}
@@ -159,31 +172,50 @@ export default function Design() {
               </p>
 
               <ol className="list-decimal ml-8 text-xl mb-6 space-y-2">
-                <li>C120 recognition sequences</li>
-                <li>A minimal promoter</li>
-                <li>A ribosome binding site</li>
+                <li>C120</li>
+                <li>Minimal promoter</li>
+                <li>Ribosomal Binding Sites (RBS)</li>
                 <li>The gbd coding sequence</li>
-                <li>A transcription terminator</li>
+                <li>Terminator</li>
               </ol>
-
+              <h2 className="text-2xl font-semibold mb-4">
+               C120 Sequence
+              </h2>
               <p className="text-xl mb-6">
-                C120 is the DNA recognition sequence bound by the HTH
-                domain of EL222. The number of C120 copies directly affects
-                transcriptional output. Studies showed that five copies
-                yielded maximum reporter expression.
+                C120 is the recognition sequence to which the HTH domain of the EL222 protein binds to. The number of copies of this sequence is important, as it controls the expression of the reporter gene. In a study (Meng et al., 2024) conducted on Escherichia coli, keeping the number of copies of C120 as 5 yielded maximum BFGF production. The sequence for this was obtained from the iGEM parts registry named pBlind (iGEM- Team XMU-China, 2020).
               </p>
-
+            <h2 className="text-2xl font-semibold mb-4">
+               Minimal Promoter
+              </h2>
               <p className="text-xl mb-6">
-                The minimal promoter used was the luxI promoter, which is
-                directly compatible with EL222. The RBS used was RBS34,
-                selected for its ability to minimize transcriptional
-                leakage.
+                The minimal promoter used in the response cassette is the luxI promoter. It has Direct EL222 compatibility (as seen in the iGEM part pBlind). The sequence was obtained from the iGEM parts registry named pBlind (iGEM- Team XMU-China, 2020).
               </p>
-
-              <p className="text-xl">
-                A double terminator composed of BBa_B0010 and BBa_B0012 was
-                used to prevent transcriptional read-through.
-              </p>
+              <h2 className="text-2xl font-semibold mb-4">
+               Ribosome Binding Site
+              </h2>
+              <p className="text-xl mb-6">
+                The RBS used in the response cassette is the RBS34. RBS34 prevents leakage. This was a part of the pBlind construct, but the sequence was obtained from the iGEM parts registry (iGEM- Valencia_UPV, 2018). </p>
+            <h2 className="text-2xl font-semibold mb-4">
+               gbd CDS
+              </h2>
+              <p className="text-xl mb-6">
+                The complete sequence of the gbd genes CDS was retrieved from Kegg. This was inserted downstream of our RBS.
+               </p>
+               <h2 className="text-2xl font-semibold mb-4">
+               Terminator
+              </h2>
+              <p className="text-xl mb-6">
+                The terminator used in this cassette is the double terminator consisting of the iGEM parts Bba_B0010 and Bba_B0012, available together as the part Bba_B0015 (iGEM- Keystone, 2022). This part was also used in a study (Huang et al., 2010) in the construction of the shuttle vector pPMQAK1, a plasmid used in conjugal transfer to cyanobacterial cells. The double terminator stops transcription coming from any inserted sequence and prevents the transcription of other sequences lying downstream, preventing read through.
+</p>
+<div className="mt-8 text-gray-500 text-center">
+    <img
+      src={design4}
+      alt="Structure of the EL222 light-inducible transcription unit"
+      className="mx-auto w-full max-w-xl"
+    />
+    <p className="mt-2 text-sm">
+    Fig 4: The constructed response cassette made on Benchling. </p>
+</div>
             </section>
 
             {/* ===== LINKAGE & ACTIVITY ===== */}
@@ -191,12 +223,7 @@ export default function Design() {
               <h2 className="text-4xl font-semibold mb-4">Linkage</h2>
               <div className="h-[2px] bg-black/30 mb-6" />
               <p className="text-xl">
-                The activation and response cassettes were joined using a
-                linker sequence lacking promoters, ribosome binding sites,
-                and start codons. This minimized transcriptional
-                interference, insulated adjacent genetic elements, and
-                ensured correct transcriptional orientation.
-              </p>
+                For assembling the activator and response fragments together, we added a linker sequence that did not contain promoters, RBS, and start codons. By including this, we reduced the transcriptional interference, helped orient transcription units during assembly and also insulated adjacent cassettes. A similar study (Ramon & Smith, 2010) was carried out in Escherichia coli.</p>
             </section>
 
             <section id="Activity-Variation" className="scroll-mt-32">
@@ -205,11 +232,17 @@ export default function Design() {
               </h2>
               <div className="h-[2px] bg-black/30 mb-6" />
               <p className="text-xl">
-                Both blue light intensity and exposure duration influence
-                EL222 activity. Increasing either parameter resulted in
-                increased reporter gene fluorescence, demonstrating tunable
-                transcriptional control.
-              </p>
+                The intensity of the blue light used and the duration of irradiation both affect how the EL222 system expresses. The link was established in a study (Jayaraman et al., 2016) on the EL222 system inserted into Escherichia coli. The duration of exposure was varied over a 60-second period by setting the intensity at 12 W/m2 (0 s on, 5 s on, 15 s on, 30 s on, 45 s on, and 60 s on). In the same way, light intensity was adjusted from 0 W/m2 to 12 W/m2. The reporter gene's fluorescence increased in both of the cases.
+</p>
+<div className="mt-8 text-gray-500 text-center">
+    <img
+      src={design5}
+      alt="Structure of the EL222 light-inducible transcription unit"
+      className="mx-auto w-full max-w-xl"
+    />
+    <p className="mt-2 text-sm">
+    Fig 4: The constructed response cassette made on Benchling. </p>
+</div>
             </section>
 
             {/* ===== PROMOTER CONFIRMATION ===== */}
@@ -219,10 +252,31 @@ export default function Design() {
               </h2>
               <div className="h-[2px] bg-black/30 mb-6" />
               <p className="text-xl">
-                Promoter prediction analysis confirmed that the gbd gene
-                and its downstream gene are controlled by separate
-                promoters, validating independent regulation.
+                To confirm that our gene of interest wasn’t part of an operon we used the software softberry/BPROM to find the promoter of our gene of interest gbd and the gene downstream of it and obtained LDF scores. 
               </p>
+              <p className="text-xl">
+                The accuracy of the promoter gbd and the gene downstream of it is mentioned below with good LDF scores of 0.80(Fig 6a)and 2.43(Fig 6b) respectively. The sequence of the promoters weren’t matching so we concluded that both the genes were controlled by different promoters.
+</p>
+<div className="mt-8 text-gray-500 text-center">
+    <img
+      src={design6}
+      alt="Structure of the EL222 light-inducible transcription unit"
+      className="mx-auto w-full max-w-xl"
+    />
+    <p className="mt-2 text-sm">
+      Fig 6a: Accuracy of promoter found for the gene  gbd.
+    </p>
+</div>
+<div className="mt-8 text-gray-500 text-center">
+    <img
+      src={design6}
+      alt="Structure of the EL222 light-inducible transcription unit"
+      className="mx-auto w-full max-w-xl"
+    />
+    <p className="mt-2 text-sm">
+      Fig 6a: Accuracy of promoter found for the gene  gbd.
+    </p>
+</div>
             </section>
 
             {/* ===== PLASMID DESIGN ===== */}
