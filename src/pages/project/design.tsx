@@ -5,6 +5,7 @@ import design3 from "../../assets/design3.png";
 import design4 from "../../assets/design4.png";
 import design5 from "../../assets/design5.png";
 import design6 from "../../assets/design6.png";
+import design7 from "../../assets/design7.png";
 
 export default function Design() {
   useEffect(() => {
@@ -270,6 +271,16 @@ export default function Design() {
 <div className="mt-8 text-gray-500 text-center">
     <img
       src={design6}
+      alt="Structure of the EL222 light-inducible transcription unit"
+      className="mx-auto w-full max-w-xl"
+    />
+    <p className="mt-2 text-sm">
+      Fig 6a: Accuracy of promoter found for the gene  gbd.
+    </p>
+</div>
+<div className="mt-8 text-gray-500 text-center">
+    <img
+      src={design7}
       alt="Structure of the EL222 light-inducible transcription unit"
       className="mx-auto w-full max-w-xl"
     />

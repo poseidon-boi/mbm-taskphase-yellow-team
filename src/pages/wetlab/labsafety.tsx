@@ -1,5 +1,5 @@
 
-function labsafety() {
+function LabSafety() {
   const renderTitleHover = (text: string) =>
     text.split("").map((char, i) => (
       <span
@@ -11,13 +11,13 @@ function labsafety() {
     ));
 
   const navLinks = [
-    { id: "labsafety-responsibility", label: "labsafety and Responsibility" },
+    { id: "LabSafety-responsibility", label: "LabSafety and Responsibility" },
     { id: "identifying-risks", label: "Identifying Project Risks" },
     { id: "handling-risks", label: "Handling These Risks" },
     { id: "lab-environment", label: "Laboratory Environment" },
-    { id: "biological-labsafety", label: "Biological labsafety" },
-    { id: "labsafety-training", label: "Laboratory and labsafety Training" },
-    { id: "chemical-labsafety", label: "Chemical labsafety" },
+    { id: "biological-LabSafety", label: "Biological LabSafety" },
+    { id: "LabSafety-training", label: "Laboratory and LabSafety Training" },
+    { id: "chemical-LabSafety", label: "Chemical LabSafety" },
     { id: "regulatory-compliance", label: "Regulatory Compliance" },
     { id: "references", label: "References" },
   ];
@@ -52,13 +52,13 @@ function labsafety() {
         <main className="w-[80%] pb-32 ml-10">
           <div className="bg-[#FEFAE0] text-black p-16 rounded-lg shadow-2xl space-y-20">
             
-            {/* labsafety and Responsibility */}
-            <section id="labsafety-responsibility" className="scroll-mt-32">
-              <h2 className="text-5xl font-semibold mb-4 text-black">labsafety and Responsibility</h2>
+            {/* LabSafety and Responsibility */}
+            <section id="LabSafety-responsibility" className="scroll-mt-32">
+              <h2 className="text-5xl font-semibold mb-4 text-black">LabSafety and Responsibility</h2>
               <div className="h-[2px] bg-black/20 mb-8" />
               <p className="text-xl mb-6">
-                Our laboratory team values the labsafety of laboratory personnel, the surrounding environment, and the greater community. 
-                All experimental plans developed for this project are constructed to be compliant with institutional biolabsafety guidelines and corresponding national laws related to biolabsafety. 
+                Our laboratory team values the LabSafety of laboratory personnel, the surrounding environment, and the greater community. 
+                All experimental plans developed for this project are constructed to be compliant with institutional bioLabSafety guidelines and corresponding national laws related to bioLabSafety. 
                 Because this project involves wet laboratory techniques, we emphasize the careful handling of biological materials, chemical reagents, and laboratory processes in order to support responsible and transparent research practices under the guidance of our supervising faculty.
               </p>
             </section>
@@ -68,8 +68,8 @@ function labsafety() {
               <h2 className="text-5xl font-semibold mb-4 text-black">Identifying Project Risks</h2>
               <div className="h-[2px] bg-black/20 mb-8" />
               <p className="text-xl mb-6">
-                To assess potential risks associated with the project, the team reviewed biolabsafety documentation and consulted academic advisors experienced in microbial and molecular biology research. 
-                Based on these discussions, it was concluded that the risks associated with the proposed work are minimal, provided that standard biolabsafety practices are strictly followed.
+                To assess potential risks associated with the project, the team reviewed bioLabSafety documentation and consulted academic advisors experienced in microbial and molecular biology research. 
+                Based on these discussions, it was concluded that the risks associated with the proposed work are minimal, provided that standard bioLabSafety practices are strictly followed.
               </p>
               <p className="text-xl mb-6">
                 The project focuses on genetic engineering and metabolic pathway modulation in bacterial systems. 
@@ -98,17 +98,17 @@ function labsafety() {
               <div id="lab-environment" className="mb-12 scroll-mt-32">
                 <h3 className="text-3xl font-bold mb-4">Laboratory Environment</h3>
                 <p className="text-xl mb-6">
-                  All experimental procedures are planned to be conducted in a Biolabsafety Level 1 (BSL-1) laboratory environment, which is appropriate for work involving non-pathogenic microorganisms such as <i className="italic">E. coli</i> S17-1 and <i className="italic">Cupriavidus necator</i> H16.
+                  All experimental procedures are planned to be conducted in a BioLabSafety Level 1 (BSL-1) laboratory environment, which is appropriate for work involving non-pathogenic microorganisms such as <i className="italic">E. coli</i> S17-1 and <i className="italic">Cupriavidus necator</i> H16.
                 </p>
                 <p className="text-xl mb-6">
                   At present, wet laboratory experimentation remains in the planning phase. 
-                  All proposed experimental workflows have been designed to conform to BSL-1 labsafety requirements. 
-                  When laboratory work begins, experiments will be conducted using established laboratory infrastructure, including autoclaves, chemical fume hoods, and designated biological waste disposal systems, in accordance with institutional labsafety guidelines.
+                  All proposed experimental workflows have been designed to conform to BSL-1 LabSafety requirements. 
+                  When laboratory work begins, experiments will be conducted using established laboratory infrastructure, including autoclaves, chemical fume hoods, and designated biological waste disposal systems, in accordance with institutional LabSafety guidelines.
                 </p>
               </div>
 
-              <div id="biological-labsafety" className="mb-12 scroll-mt-32">
-                <h3 className="text-3xl font-bold mb-4">Biological labsafety</h3>
+              <div id="biological-LabSafety" className="mb-12 scroll-mt-32">
+                <h3 className="text-3xl font-bold mb-4">Biological LabSafety</h3>
                 <p className="text-xl mb-4 font-bold underline">The biological systems planned for use in this project are limited to non-pathogenic bacterial strains:</p>
                 <ul className="list-disc ml-10 text-xl mb-6 space-y-4">
                   <li>
@@ -127,12 +127,12 @@ function labsafety() {
                 </p>
               </div>
 
-              <div id="labsafety-training" className="mb-12 scroll-mt-32">
-                <h3 className="text-3xl font-bold mb-4">Laboratory and labsafety Training</h3>
-                <p className="text-xl mb-4 font-bold underline">Team members have received foundational training in laboratory labsafety and biolabsafety practices, including:</p>
+              <div id="LabSafety-training" className="mb-12 scroll-mt-32">
+                <h3 className="text-3xl font-bold mb-4">Laboratory and LabSafety Training</h3>
+                <p className="text-xl mb-4 font-bold underline">Team members have received foundational training in laboratory LabSafety and bioLabSafety practices, including:</p>
                 <ul className="list-disc ml-10 text-xl mb-6 space-y-2">
                   <li>Aseptic techniques for handling microbial cultures</li>
-                  <li>Understanding of biolabsafety levels</li>
+                  <li>Understanding of bioLabSafety levels</li>
                   <li>Identification of biological and chemical hazards</li>
                   <li>Proper use of Personal Protective Equipment (PPE)</li>
                 </ul>
@@ -141,8 +141,8 @@ function labsafety() {
                 </p>
               </div>
 
-              <div id="chemical-labsafety" className="mb-12 scroll-mt-32">
-                <h3 className="text-3xl font-bold mb-4">Chemical labsafety</h3>
+              <div id="chemical-LabSafety" className="mb-12 scroll-mt-32">
+                <h3 className="text-3xl font-bold mb-4">Chemical LabSafety</h3>
                 <p className="text-xl mb-6">
                   The chemicals planned for use in this project include laboratory solvents, antibiotics, inducers, and reagents commonly used in molecular biology and polymer analysis.
                 </p>
@@ -150,7 +150,7 @@ function labsafety() {
                 <ul className="list-disc ml-10 text-xl mb-6 space-y-2">
                   <li>Flammable solvents will be handled inside chemical fume hoods and kept away from ignition sources</li>
                   <li>Disposable gloves will be worn when handling antibiotics and chemical reagents</li>
-                  <li>Organic solvents will be stored, used, and disposed of according to institutional chemical labsafety guidelines</li>
+                  <li>Organic solvents will be stored, used, and disposed of according to institutional chemical LabSafety guidelines</li>
                 </ul>
                 <p className="text-xl mb-6">
                   All chemical waste will be segregated and disposed of following approved laboratory protocols.
@@ -162,7 +162,7 @@ function labsafety() {
             <section id="regulatory-compliance" className="scroll-mt-32">
               <h2 className="text-5xl font-semibold mb-4 text-black">Regulatory Compliance</h2>
               <div className="h-[2px] bg-black/20 mb-8" />
-              <p className="text-xl mb-4 font-bold underline">The design and planning of this project follow national biolabsafety regulations, including:</p>
+              <p className="text-xl mb-4 font-bold underline">The design and planning of this project follow national bioLabSafety regulations, including:</p>
               <ul className="list-disc ml-10 text-xl mb-6 space-y-4">
                 <li>
                   <span className="font-bold underline">The Environment (Protection) Act, 1986</span>, which governs the handling and disposal of hazardous substances.
@@ -197,4 +197,4 @@ function labsafety() {
   );
 }
 
-export default labsafety;
+export default LabSafety;
